@@ -10,7 +10,7 @@ PUBLISHCONF=$(BASEDIR)/publishconf.py
 
 SSH_HOST=localhost
 SSH_PORT=22
-SSH_USER=djabber
+SSH_USER=dJabber
 SSH_TARGET_DIR=/var/www
 
 GITHUB_PAGES_BRANCH=gh-pages

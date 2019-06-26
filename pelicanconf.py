@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'dJabber'
-SITENAME = 'Домашняя кондитерская Анны'
+SITENAME = 'AnnaBake'
 SITEURL = ''
 
 PATH = 'content'
@@ -19,9 +19,6 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-STATIC_PATHS=['extra/CNAME']
-EXTRA_PATH_METADATA={'extra/CNAME':{'path':'CNAME'}}
-
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Python.org', 'http://python.org/'),
@@ -34,9 +31,5 @@ SOCIAL = (('You can add links in your config file', '#'),
 
 DEFAULT_PAGINATION = 10
 
-
-PLUGINS = ['plugins.tipue_search.tipue_search']
-
-LOAD_CONTENT_CACHE=False
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True

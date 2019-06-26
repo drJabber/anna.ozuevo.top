@@ -13,7 +13,7 @@ CONFIG = {
     # Local path configuration (can be absolute or relative to tasks.py)
     'deploy_path': 'output',
     # Remote server configuration
-    'production': 'djabber@localhost:22',
+    'production': 'dJabber@localhost:22',
     'dest_path': '/var/www',
     # Github Pages configuration
     'github_pages_branch': 'gh-pages',
