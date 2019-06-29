@@ -10,7 +10,7 @@ do
                 pelican content -o output -s publishconf.py
                 echo anna.ozuevo.top > output/CNAME
                 ghp-import output
-                git push --no-verify git@github.com:drJabber/anna.ozuevo.top.git gh-pages:master
+                git push --no-verify git@github.com:drJabber/anna.ozuevo.top gh-pages:master
                 pelican content -o output
         fi
 done
