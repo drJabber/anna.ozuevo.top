@@ -1,0 +1,18 @@
+#!/bin/sh
+
+#copy this file to ~/.git/hooks
+
+while read local_ref local_sha remote_ref remote_sha
+do
+        if [ "$remote_ref" = "refs/heads/source" ]
+        then
+                echo 'pushing output folder (production version) to master...'
+                pelican content -o output -s publishconf.py
+                echo anna.ozuevo.top > output/CNAME
+                ghp-import output
+                git push --no-verify git@github.com:drJabber/anna.ozuevo.top.git gh-pages:master
+                pelican content -o output
+        fi
+done
+
+exit 0
