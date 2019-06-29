@@ -1,9 +1,16 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import bulrush
 
 AUTHOR = 'dJabber'
 SITENAME = 'AnnaBake'
+THEME=bulrush.PATH
+JINJA_ENVIRONMENT=bulrush.ENVIRONMENT
+JINJA_FILTERS=bulrush.FILTERS
+
+PLUGIN_PATHS=['../pelican-plugins']
+PLUGINS=['assets']
 
 PATH = 'content'
 
