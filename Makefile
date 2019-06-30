@@ -1,12 +1,18 @@
 PY?=python3
 PELICAN?=pelican
+INSTALOADER=?instaloader
 PELICANOPTS=
+INSTALOADER_OPTS=--no-compress-json --no-captions --fast-update 
 
 BASEDIR=$(CURDIR)
 INPUTDIR=$(BASEDIR)/content
 OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
+
+#instagram
+INSTAGRAM_PROFILE=anna.sutiagina
+INSTAGRAM_DATA_DIR=data
 
 SSH_HOST=localhost
 SSH_PORT=22
@@ -40,6 +46,7 @@ help:
 	@echo '   make ssh_upload                     upload the web site via SSH        '
 	@echo '   make rsync_upload                   upload the web site via rsync+ssh  '
 	@echo '   make github                         upload the web site via gh-pages   '
+	@echo '   make data                           update instagram data              '
 	@echo '                                                                          '
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html   '
 	@echo 'Set the RELATIVE variable to 1 to enable relative urls                    '
@@ -68,6 +75,8 @@ else
 	$(PELICAN) -l $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS) -p $(PORT) -b 0.0.0.0
 endif
 
+data:
+	$(INSTALOADER) $(INSTAGRAM_PROFILE) $(INSTALOADER_OPTS) --dirname-pattern $(INSTAGRAM_DATA_DIR)
 
 devserver:
 ifdef PORT

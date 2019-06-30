@@ -36,8 +36,10 @@ pip-log.txt
 source/cache/
 venv
 
+#generated content
 generated/
 output/
+data/
 
 XDG_CACHE_HOME/
 ~*
