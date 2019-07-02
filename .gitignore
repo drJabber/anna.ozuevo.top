@@ -39,6 +39,7 @@ venv
 #generated content
 generated/
 output/
+content/blog/
 data/
 
 XDG_CACHE_HOME/

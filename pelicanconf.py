@@ -9,13 +9,31 @@ THEME=bulrush.PATH
 JINJA_ENVIRONMENT=bulrush.ENVIRONMENT
 JINJA_FILTERS=bulrush.FILTERS
 
-PLUGIN_PATHS=['../pelican-plugins']
-PLUGINS=['assets']
+PLUGIN_PATHS=['pelican-plugins','../pelican-plugins']
+PLUGINS=['assets','peligram']
 
+OUTPUT_PATH='output'
 PATH = 'content'
+STATIC_PATHS=['static','extra/CNAME']
+INSTAGRAM_DATA_PATH='data'
+PELIGRAM_OUTPUT_MARKDOWN_DIR='blog'
+PELIGRAM_OUTPUT_IMAGES_DIR='blog/images'
+PELIGRAM_CATEGORY='Instagram'
+PELIGRAM_MEDIA_PATTERNS=['*.jpg', '*.mp4']
+
+
+
+EXTRA_PATH_METADATA={'extra/CNAME':{'path':'CNAME'}}
+
+ARTICLE_PATHS=['blog']
+ARTICLE_SAVE_AS='{date:%Y}/{slug}.html'
+ARTICLE_URL='{date:%Y}/{slug}.html'
+
+HEADER_COVER='static/img/cover.jpg'
 
 TIMEZONE = 'Europe/Moscow'
 SITEURL='https://anna.ozuevo.top'
+
 
 DEFAULT_LANG = 'ru'
 
