@@ -1,7 +1,7 @@
 PY?=python3
 PELICAN?=pelican
 INSTALOADER=?instaloader
-PELICANOPTS=
+PELICANOPTS= -D
 INSTALOADER_OPTS=--no-compress-json --no-captions --fast-update 
 
 BASEDIR=$(CURDIR)

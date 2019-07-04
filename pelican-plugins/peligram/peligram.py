@@ -35,6 +35,16 @@ class _processor(object):
                             pelican.settings.get('PELIGRAM_OUTPUT_IMAGES_DIR', DEFAULT_IMAGES_DIR))
         self.category=pelican.settings.get("PELIGRAM_CATEGORY", DEFAULT_INSTAGRAM_CATEGORY)                   
 
+    def extract_tags(post_text,post_tags):
+        pattern=re.compile(r'#(\w+)')
+        for match in pattern.finditer(post_text):
+            post_tags+=[match]
+
+    def make_tag_link(self,match):
+        tag=match.group()
+        return "["+tag.replace('#','')+"]({tag}"+tag.replace('#','')+")"
+        # return "|category|Instagram"
+
     def make_post(self, filename, media_filenames):
         logger.debug("create post for "+filename)
 
@@ -45,12 +55,17 @@ class _processor(object):
             logger.debug("get metadata for "+filename)
 
             post_text=''
-
+            tags_text=''
+            post_tags=[]
             json_result=jp.match('$.node.__typename',json_data)
             if json_result:
                 json_result=jp.match('$.node.edge_media_to_caption.edges[0].node.text',json_data)
                 if json_result:
                     post_text=json_result[0]
+                    pattern=re.compile('#(\w+)')
+                    post_tags=re.findall(pattern,post_text)
+                    post_text=re.sub(pattern,self.make_tag_link,post_text)
+                    tags_text=', '.join(list(map(lambda match : match.replace('#',''),post_tags)))
 
                 post_date=''
                 json_result=jp.match('$.node.taken_at_timestamp',json_data)
@@ -62,7 +77,7 @@ class _processor(object):
                 if json_result:
                     post_slug=json_result[0]
 
-                post_meta={'Title':'', 'Date':post_date, 'Slug':post_slug, 'Category':self.category}
+                post_meta={'Title':'', 'Date':post_date, 'Slug':post_slug, 'Category':self.category, 'Tags':tags_text}
                 post_data=''.join(f'{x}:{y}\n' for (x,y) in post_meta.items())+post_text+'\n'
                 for fn in media_filenames:    
                     post_data=post_data+'![instagram]({attach}images/'+fn+')\n'
