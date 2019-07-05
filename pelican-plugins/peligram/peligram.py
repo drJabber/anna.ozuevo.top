@@ -140,5 +140,5 @@ def instagram_data_path(pelican):
 
 
 def register():
-    signals.initialized.connect(generate_markdown)
+    signals.get_generators.connect(generate_markdown)
     

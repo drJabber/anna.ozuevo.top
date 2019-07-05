@@ -10,11 +10,12 @@ JINJA_ENVIRONMENT=bulrush.ENVIRONMENT
 JINJA_FILTERS=bulrush.FILTERS
 
 PLUGIN_PATHS=['pelican-plugins','../pelican-plugins']
-PLUGINS=['assets','peligram']
+PLUGINS=['assets']#,'peligram']
 
 OUTPUT_PATH='output'
 PATH = 'content'
-STATIC_PATHS=['static','extra/CNAME']
+STATIC_PATHS=['extra']
+
 INSTAGRAM_DATA_PATH='data'
 PELIGRAM_OUTPUT_MARKDOWN_DIR='blog'
 PELIGRAM_OUTPUT_IMAGES_DIR='blog/images'
@@ -23,7 +24,10 @@ PELIGRAM_MEDIA_PATTERNS=['*.jpg', '*.mp4']
 
 
 
-EXTRA_PATH_METADATA={'extra/CNAME':{'path':'CNAME'}}
+EXTRA_PATH_METADATA={'extra/CNAME':{'path':'CNAME'},
+                    'extra/css/custom.css':{'path': 'css/custom.css'}, 
+                    'extra/img/hero-bg.jpg':{'path': 'img/hero-bg.jpg'}, 
+                    }
 
 ARTICLE_PATHS=['blog']
 ARTICLE_SAVE_AS='{date:%Y}/{slug}.html'
@@ -46,10 +50,14 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (('You can modify those links in your config file', '#'),)
+LINKS_WIDGET_NAME='Ссылки'
+
+OTHER_PAGES_WIDGET_NAME="Избранное"
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('Инстаграм', 'https://www.instagram.com/anna.sutiagina'),
+          )
+SOCIAL_WIDGET_NAME='Социальные сети'          
 
 DEFAULT_PAGINATION = 10
 
