@@ -19,7 +19,7 @@ STATIC_PATHS=['extra']
 INSTAGRAM_DATA_PATH='data'
 PELIGRAM_OUTPUT_MARKDOWN_DIR='blog'
 PELIGRAM_OUTPUT_IMAGES_DIR='blog/images'
-PELIGRAM_CATEGORY='Instagram'
+PELIGRAM_CATEGORY='Инстаграм'
 PELIGRAM_MEDIA_PATTERNS=['*.jpg', '*.mp4']
 
 
@@ -53,13 +53,16 @@ LINKS = (('You can modify those links in your config file', '#'),)
 LINKS_WIDGET_NAME='Ссылки'
 
 OTHER_PAGES_WIDGET_NAME="Избранное"
+OTHER_ARTICLES_WIDGET_NAME="Посты"
+
+PAGINATED_TEMPLATES = {'index': 12, 'tag': 12, 'category': 6, 'author': 6}
 
 # Social widget
 SOCIAL = (('Инстаграм', 'https://www.instagram.com/anna.sutiagina'),
           )
 SOCIAL_WIDGET_NAME='Социальные сети'          
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 6
 
 LOAD_CONTENT_CACHE=False
 # Uncomment following line if you want document-relative URLs when developing
