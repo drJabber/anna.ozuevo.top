@@ -1,4 +1,4 @@
-'''
+''' 
 tag_cloud
 ===================================
 
@@ -19,10 +19,7 @@ logger = logging.getLogger(__name__)
 
 
 def set_default_settings(settings):
-    settings.setdefault('TAG_CLOUD_STEPS', 4)
-    settings.setdefault('TAG_CLOUD_MAX_ITEMS', 100)
-    settings.setdefault('TAG_CLOUD_SORTING', 'random')
-    settings.setdefault('TAG_CLOUD_BADGE', False)
+    settings.setdefault('AMTAG_CLOUD_MAX_ITEMS', 100)
 
 
 def init_default_config(pelican):
@@ -37,58 +34,21 @@ def generate_tag_cloud(generator):
     for article in generator.articles:
         for tag in getattr(article, 'tags', []):
             tag_cloud[tag] += 1
-    max_tag=max(tag_cloud.items(), key=itemgetter(1))[1]
-    min_tag=min(tag_cloud.items(), key=itemgetter(1))[1]
-    tag_cloud=list(map(lambda v: (v[0], min_tag+100*(v[1]-min_tag)/(max_tag-min_tag)), tag_cloud.items()))
-    # tag_cloud=list(map(lambda v: (v[0],v[1]), tag_cloud.items()))
-    logger.debug(tag_cloud)
 
-    # tag_cloud = sorted(tag_cloud.items(), key=itemgetter(1), reverse=True)
-    tag_cloud = tag_cloud[:generator.settings.get('TAG_CLOUD_MAX_ITEMS')]
+    tag_cloud = sorted(tag_cloud.items(), key=itemgetter(1))#sort list of tuples (tag,count) by count 
+    tag_cloud=list(map(lambda e: (e[1][0],e[1][1], e[0]), enumerate(tag_cloud)))#make list of tuples (tag,count,index)
 
-    # tags = list(map(itemgetter(1), tag_cloud))
-    # if tags:
-    #     max_count = tags[0]
-    #     min_count = tags[-1]
-    # steps = generator.settings.get('TAG_CLOUD_STEPS')
+    tag_cloud = tag_cloud[:generator.settings.get('AMTAG_CLOUD_MAX_ITEMS'):-1]#slice MAX_ITMES elements
 
-    # # calculate word sizes
-    # def generate_tag(tag, count):
-    #     tag = (
-    #         tag,
-    #         int(math.floor(steps - (steps - 1) * math.log(count - min_count + 1)
-    #             / (math.log(max_count - min_count + 1) or 1)))
-    #     )
-    #     if generator.settings.get('TAG_CLOUD_BADGE'):
-    #         tag += (count,)
-    #     return tag
-
-    def generate_am_tag(tag, count):
-        return {"tag":tag.name, "count":count, "url":tag.url} 
+    #generate list of dicts (tag, count, index) to create json in html
+    def generate_am_tag(tag, count,index):
+        return {"tag":tag.name, "count":count, "index":index, "url":tag.url} 
 
     tag_cloud = [
-        generate_am_tag(tag, count)
-        for tag, count in tag_cloud
+        generate_am_tag(tag, count, index)
+        for tag, count,index in tag_cloud
     ]
 
-    # sorting = generator.settings.get('TAG_CLOUD_SORTING')
-
-    # if sorting == 'alphabetically':
-    #     tag_cloud.sort(key=lambda elem: elem[0].name)
-    # elif sorting == 'alphabetically-rev':
-    #     tag_cloud.sort(key=lambda elem: elem[0].name, reverse=True)
-    # elif sorting == 'size':
-    #     tag_cloud.sort(key=lambda elem: elem[1])
-    # elif sorting == 'size-rev':
-    #     tag_cloud.sort(key=lambda elem: elem[1], reverse=True)
-    # elif sorting == 'random':
-    #     random.shuffle(tag_cloud)
-    # else:
-    #     logger.warning("setting for TAG_CLOUD_SORTING not recognized: %s, "
-    #                    "falling back to 'random'", sorting)
-    #     random.shuffle(tag_cloud)
-
-    # make available in context
     generator.tag_cloud = tag_cloud
     generator._update_context(['tag_cloud'])
 

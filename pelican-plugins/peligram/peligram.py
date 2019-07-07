@@ -1,4 +1,4 @@
-import os
+import os 
 import os.path as path
 import fnmatch
 import shutil
@@ -79,8 +79,21 @@ class _processor(object):
 
                 post_meta={'Title':'', 'Date':post_date, 'Slug':post_slug, 'Category':self.category, 'Tags':tags_text}
                 post_data=''.join(f'{x}:{y}\n' for (x,y) in post_meta.items())+post_text+'\n'
+                
+
                 for fn in media_filenames:    
                     post_data=post_data+'![instagram]({attach}images/'+fn+')\n'
+                        
+                # for fn in media_filenames:    
+                #     ext=path.splitext(fn)[-1].lower()
+                #     if ext=='.jpg':
+                #         lq_tags='{% img /images/'+fn+' %}\n'
+                #     elif ext=='.mp4':
+                #         lq_tags='{% video /images/'+fn+' %}\n'
+                #     else:
+                #         lq_tags=''        
+
+                #     post_data=post_data+lq_tags
 
                 with open(path.join(self.out_path,path.splitext(filename)[0]+'.markdown'),'w+') as md:
                     md.write(post_data)   

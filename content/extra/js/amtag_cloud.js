@@ -1,7 +1,7 @@
-am4core.ready(function() {
+am4core.ready(function() { 
 
     // Themes begin
-    am4core.useTheme(am4themes_material);
+    am4core.useTheme(am4themes_animated);
     // Themes end
     
     var chart = am4core.create("chartdiv", am4plugins_wordCloud.WordCloud);
@@ -14,7 +14,8 @@ am4core.ready(function() {
     
     series.dataFields.word = "tag";
     series.dataFields.url = "url";
-    series.dataFields.value = "count";
+    series.dataFields.count = "count";
+    series.dataFields.value = "index";
     
     series.heatRules.push({
      "target": series.labels.template,
@@ -26,7 +27,7 @@ am4core.ready(function() {
     
     series.labels.template.url = tagcloud_url_root+"{url}";
     series.labels.template.urlTarget = "_self";
-    series.labels.template.tooltipText = "{word}: {value}";
+    series.labels.template.tooltipText = "{word}: {count}";
     series.labels.template.tooltip.fill = am4core.color("#000000");
     
     var hoverState = series.labels.template.states.create("hover");
