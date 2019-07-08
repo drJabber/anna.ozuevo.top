@@ -84,13 +84,10 @@ class _processor(object):
                 for fn in media_filenames:    
                     ext=path.splitext(fn)[-1].lower()
                     if ext=='.jpg':
-                        md_tags=post_data+'![instagram]({attach}images/'+fn+')\n'
+                        post_data+='![instagram]({attach}images/'+fn+')\n'
                     elif ext=='.mp4':
-                        md_tags='[video]\n[download.mp4]({attach}images/'+fn+')\n[size](800,600)'
-                    else:
-                        md_tags=''        
+                        post_data+='\n[video]\n[download.mp4]({attach}images/'+fn+')\n'
 
-                post_data=post_data+md_tags
 
                 with open(path.join(self.out_path,path.splitext(filename)[0]+'.markdown'),'w+') as md:
                     md.write(post_data)   

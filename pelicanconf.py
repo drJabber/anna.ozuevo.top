@@ -10,7 +10,7 @@ JINJA_ENVIRONMENT=bulrush.ENVIRONMENT
 JINJA_FILTERS=bulrush.FILTERS
 
 PLUGIN_PATHS=['pelican-plugins','../pelican-plugins']
-PLUGINS=['assets','amtag_cloud','liquid_tags.video']#,'peligram']
+PLUGINS=['assets','amtag_cloud','peligram']
 
 OUTPUT_PATH='output'
 PATH = 'content'
