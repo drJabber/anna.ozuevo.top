@@ -36,7 +36,7 @@ def generate_tag_cloud(generator):
             tag_cloud[tag] += 1
 
     tag_cloud = sorted(tag_cloud.items(), key=itemgetter(1))#sort list of tuples (tag,count) by count 
-    tag_cloud=list(map(lambda e: (e[1][0],e[1][1], e[0]), enumerate(tag_cloud)))#make list of tuples (tag,count,index)
+    tag_cloud=list(map(lambda e: (e[1][0],e[1][1], e[0]*e[0]), enumerate(tag_cloud)))#make list of tuples (tag,count,index)
 
     tag_cloud = tag_cloud[:generator.settings.get('AMTAG_CLOUD_MAX_ITEMS'):-1]#slice MAX_ITMES elements
 

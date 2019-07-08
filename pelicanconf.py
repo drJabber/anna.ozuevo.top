@@ -10,7 +10,7 @@ JINJA_ENVIRONMENT=bulrush.ENVIRONMENT
 JINJA_FILTERS=bulrush.FILTERS
 
 PLUGIN_PATHS=['pelican-plugins','../pelican-plugins']
-PLUGINS=['assets','amtag_cloud','peligram']
+PLUGINS=['assets','amtag_cloud','liquid_tags.video']#,'peligram']
 
 OUTPUT_PATH='output'
 PATH = 'content'
@@ -77,3 +77,14 @@ RELATIVE_URLS = True
 #tag cloud plugin config
 AMTAG_CLOUD=True
 AMTAG_CLOUD_MAX_ITEMS=50 #number of different tags that can appear in tag cloud
+
+
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight'},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+        'md_video':{},
+    },
+    'output_format': 'html5',
+}
