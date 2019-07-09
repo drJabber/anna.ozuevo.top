@@ -1,13 +1,16 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
-import bulrush
+
+import sys
+sys.path.insert(0,'./annatheme')
+import annatheme
 
 AUTHOR = 'dJabber'
 SITENAME = 'AnnaBake'
-THEME=bulrush.PATH
-JINJA_ENVIRONMENT=bulrush.ENVIRONMENT
-JINJA_FILTERS=bulrush.FILTERS
+THEME=annatheme.PATH
+JINJA_ENVIRONMENT=annatheme.ENVIRONMENT
+JINJA_FILTERS=annatheme.FILTERS
 
 PLUGIN_PATHS=['pelican-plugins','../pelican-plugins']
 PLUGINS=['assets','amtag_cloud','peligram']

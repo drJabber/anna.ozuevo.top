@@ -1,6 +1,6 @@
 PY?=python3
 PELICAN?=pelican
-INSTALOADER=?instaloader
+INSTALOADER?=instaloader
 PELICANOPTS= -D
 INSTALOADER_OPTS=--no-compress-json --no-captions --fast-update 
 
@@ -53,7 +53,8 @@ help:
 	@echo '                                                                          '
 
 html:
-	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
+	$(INSTALOADER) $(INSTAGRAM_PROFILE) $(INSTALOADER_OPTS) --dirname-pattern $(INSTAGRAM_DATA_DIR)
+	$(PELICAN) -lr $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 clean:
 	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
