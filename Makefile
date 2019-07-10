@@ -1,4 +1,5 @@
-PY?=python3
+PY?=python3 
+
 PELICAN?=pelican
 INSTALOADER?=instaloader
 PELICANOPTS= -D
