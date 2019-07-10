@@ -6,6 +6,9 @@ import sys
 sys.path.insert(0,'./annatheme')
 import annatheme
 
+
+DELETE_OUTPUT_DIRECTORY=True
+
 AUTHOR = 'dJabber'
 SITENAME = 'AnnaBake'
 THEME=annatheme.PATH
@@ -13,7 +16,7 @@ JINJA_ENVIRONMENT=annatheme.ENVIRONMENT
 JINJA_FILTERS=annatheme.FILTERS
 
 PLUGIN_PATHS=['pelican-plugins','../pelican-plugins']
-PLUGINS=['assets','amtag_cloud','peligram']
+PLUGINS=['assets','amtag_cloud']#,'peligram']
 
 OUTPUT_PATH='output'
 PATH = 'content'
