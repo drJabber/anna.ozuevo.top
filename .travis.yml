@@ -1,5 +1,5 @@
 language: python
-branches:
+branches: 
   only:
   - source
 install:
