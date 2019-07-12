@@ -96,12 +96,16 @@ ssh_upload: publish
 rsync_upload: publish
 	rsync -e "ssh -p $(SSH_PORT)" -P -rvzc --cvs-exclude --delete $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
 
-github: data publish
+github: 
+	$(INSTALOADER) $(INSTAGRAM_PROFILE) $(INSTALOADER_OPTS) --dirname-pattern $(INSTAGRAM_DATA_DIR)
+	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
 	git push origin $(GITHUB_PAGES_BRANCH)
 
-travis: data publish
+travis:
 ifeq ($(TRAVIS_PULL_REQUEST), false)
+	$(INSTALOADER) $(INSTAGRAM_PROFILE) $(INSTALOADER_OPTS) --dirname-pattern $(INSTAGRAM_DATA_DIR)
+	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 	ghp-import -n -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
 	# ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
 	@git push -fq https://${GH_TOKEN}@github.com/$(TRAVIS_REPO_SLUG).git $(GITHUB_PAGES_BRANCH) > /dev/null
