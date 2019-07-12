@@ -101,6 +101,7 @@ github: publish
 	git push origin $(GITHUB_PAGES_BRANCH)
 
 travis: publish
+	$(INSTALOADER) $(INSTAGRAM_PROFILE) $(INSTALOADER_OPTS) --dirname-pattern $(INSTAGRAM_DATA_DIR)
 ifeq ($(TRAVIS_PULL_REQUEST), false)
 	ghp-import -n -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
 	# ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
