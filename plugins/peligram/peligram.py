@@ -33,7 +33,10 @@ class _processor(object):
                             pelican.settings.get('PELIGRAM_OUTPUT_MARKDOWN_DIR', DEFAULT_MARKDOWN_DIR))
         self.img_path = path.join(pelican.settings['PATH'],
                             pelican.settings.get('PELIGRAM_OUTPUT_IMAGES_DIR', DEFAULT_IMAGES_DIR))
-        self.category=pelican.settings.get("PELIGRAM_CATEGORY", DEFAULT_INSTAGRAM_CATEGORY)                   
+        self.category=pelican.settings.get("PELIGRAM_CATEGORY", DEFAULT_INSTAGRAM_CATEGORY)  
+
+        os.makedirs(self.img_path, exist_ok=True) 
+                        
 
     def extract_tags(post_text,post_tags):
         pattern=re.compile(r'#(\w+)')
