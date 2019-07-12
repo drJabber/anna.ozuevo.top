@@ -32,6 +32,7 @@ PELIGRAM_MEDIA_PATTERNS=['*.jpg', '*.mp4']
 
 
 EXTRA_PATH_METADATA={'extra/CNAME':{'path':'CNAME'},
+                    'extra/robots.txt':{'path':'robots.txt'},
                     'extra/css/custom.css':{'path': 'css/custom.css'}, 
                     'extra/img/hero-bg.jpg':{'path': 'img/hero-bg.jpg'}, 
                     'extra/js/amtag_cloud.js':{'path': 'js/amtag_cloud.js'}, 
