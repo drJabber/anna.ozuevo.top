@@ -16,7 +16,7 @@ JINJA_ENVIRONMENT=annatheme.ENVIRONMENT
 JINJA_FILTERS=annatheme.FILTERS
 
 PLUGIN_PATHS=['plugins','pelican-plugins']
-PLUGINS=['assets','amtag_cloud','peligram']
+PLUGINS=['assets','amtag_cloud','sitemap','peligram']
 
 OUTPUT_PATH='output'
 PATH = 'content'

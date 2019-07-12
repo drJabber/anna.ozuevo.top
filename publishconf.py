@@ -10,7 +10,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-PLUGINS=['assets','amtag_cloud','peligram']
+PLUGINS=['assets','amtag_cloud','sitemap','peligram']
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
 SITEURL = 'https://anna.ozuevo.top'
@@ -28,3 +28,17 @@ DELETE_OUTPUT_DIRECTORY = False
 
 #DISQUS_SITENAME = ""
 #GOOGLE_ANALYTICS = ""
+
+SITEMAP = {
+    'format': 'xml',
+    'priorities': {
+        'articles': 0.5,
+        'indexes': 0.5,
+        'pages': 0.5
+    },
+    'changefreqs': {
+        'articles': 'daily',
+        'indexes': 'daily',
+        'pages': 'daily'
+    }
+}

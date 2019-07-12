@@ -1,0 +1,8 @@
+
+User-agent: Yandex
+Disallow: /content/
+
+User-agent: *
+Disallow: /content/
+Sitemap: http://site_name/sitemap.xml
+Host: site_name
