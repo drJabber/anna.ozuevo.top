@@ -35,6 +35,9 @@ EXTRA_PATH_METADATA={'extra/CNAME':{'path':'CNAME'},
                     'extra/robots.txt':{'path':'robots.txt'},
                     'extra/css/custom.css':{'path': 'css/custom.css'}, 
                     'extra/img/hero-bg.jpg':{'path': 'img/hero-bg.jpg'}, 
+                    'extra/img/main-bg-001.jpg':{'path': 'img/main-bg-001.jpg'}, 
+                    'extra/img/main-bg-002.jpg':{'path': 'img/main-bg-002.jpg'}, 
+                    'extra/img/main-bg-003.jpg':{'path': 'img/main-bg-003.jpg'}, 
                     'extra/js/amtag_cloud.js':{'path': 'js/amtag_cloud.js'}, 
                     }
 

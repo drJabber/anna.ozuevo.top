@@ -1,4 +1,21 @@
 .has-hero-bg { background: url('/img/hero-bg.jpg') center center; background-size:cover; }
+/* .has-container-bg { background: url('/img/main-bg-001.jpg') repeat ; background-size:auto; } */
+
+.has-container-bg::after {
+    content: "";
+    background: url('/img/main-bg-001.jpg');
+    opacity: 0.15;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+
+.has-transparent-bg {
+    background-color: rgba(1,0,0, 0.2)
+}  
 
 #chartdiv {
  width: 100%;
