@@ -124,16 +124,25 @@
   </div>
 </div>
 
-<footer class="footer">
-  <div class="container has-text-centered">
-    {% if SITESUBTITLE %} <p class="subtitle">{{ SITESUBTITLE }}</p>{% endif %}
-    <div class="credits">
-      <span>
-        <a href="https://github.com/textbook/bulrush">Bulrush</a>&<a href="https://bulma.io">Bulma</a> theme for
-        <a href="https://blog.getpelican.com/">Pelican</a> customized by <a href="https://t.me/dJabbber">dJabber</a></span>
-      <span><span class="icon is-small"><i class="fa fa-html5"></i></span> HTML 5</span>
-      <span><span class="icon is-small"><i class="fa fa-css3"></i></span> CSS 3</span>
-    </div>
+<footer class="footer is-danger">
+  <div class="container">
+      {% if SITESUBTITLE %} <p class="subtitle">{{ SITESUBTITLE }}</p>{% endif %}
+      <div class="columns  has-text-centered">
+          <div class="column is-one-third-tablet is-one-quarter-desktop">
+              <div class="credits">
+                  <span>
+                    <a href="https://github.com/textbook/bulrush">Bulrush</a>&<a href="https://bulma.io">Bulma</a> theme for
+                    <a href="https://blog.getpelican.com/">Pelican</a> customized by <a href="https://t.me/dJabbber">dJabber</a></span>
+                  <span><span class="icon is-small"><i class="fa fa-html5"></i></span> HTML 5</span>
+                  <span><span class="icon is-small"><i class="fa fa-css3"></i></span> CSS 3</span>
+              </div>
+          </div>
+          <div class="column">
+            <p>{{CONTACTS_PERSON}}</p>
+            <p>{{CONTACTS_PHONE}}</p>
+            <p>{{CONTACTS_ADDRESS}}</p>
+          </div>
+      </div>
   </div>
   {% include 'github.html' %}
 </footer>

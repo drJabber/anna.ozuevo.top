@@ -11,9 +11,16 @@ DELETE_OUTPUT_DIRECTORY=True
 
 AUTHOR = 'dJabber'
 SITENAME = 'AnnaBake'
+
+CONTACTS_PERSON='Анна'
+CONTACTS_PHONE='+7(926)220-1610'
+CONTACTS_ADDRESS='Орехово-Зуево'
+
 THEME=annatheme.PATH
 JINJA_ENVIRONMENT=annatheme.ENVIRONMENT
 JINJA_FILTERS=annatheme.FILTERS
+
+
 
 PLUGIN_PATHS=['plugins','pelican-plugins']
 PLUGINS=['assets','amtag_cloud','sitemap','thumbnailer','peligram']
