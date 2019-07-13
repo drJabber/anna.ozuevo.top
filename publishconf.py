@@ -19,8 +19,8 @@ RELATIVE_URLS = False
 YANDEX_METRICA=54428389
 YANDEX_VERIFICATION='b6a6b827587b30e8'
 
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
+# FEED_ALL_ATOM = 'feeds/all.atom.xml'
+# CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
 
 DELETE_OUTPUT_DIRECTORY = False
 

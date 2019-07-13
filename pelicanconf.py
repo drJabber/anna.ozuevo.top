@@ -20,6 +20,12 @@ THEME=annatheme.PATH
 JINJA_ENVIRONMENT=annatheme.ENVIRONMENT
 JINJA_FILTERS=annatheme.FILTERS
 
+LOCALE='ru_RU.utf8'
+DATE_FORMATS = {
+    'en': '%a, %d %b %Y',
+    'ru': '%a, %d %B %Y',
+    'ru_RU.utf8': '%a, %d %B %Y',
+}
 
 
 PLUGIN_PATHS=['plugins','pelican-plugins']
