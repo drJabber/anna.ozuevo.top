@@ -16,7 +16,7 @@ JINJA_ENVIRONMENT=annatheme.ENVIRONMENT
 JINJA_FILTERS=annatheme.FILTERS
 
 PLUGIN_PATHS=['plugins','pelican-plugins']
-PLUGINS=['assets','amtag_cloud','sitemap','peligram']
+PLUGINS=['assets','amtag_cloud','sitemap','thumbnailer','peligram']
 
 OUTPUT_PATH='output'
 PATH = 'content'
@@ -29,15 +29,24 @@ PELIGRAM_OUTPUT_IMAGES_DIR='blog/images'
 PELIGRAM_CATEGORY='Инстаграм'
 PELIGRAM_MEDIA_PATTERNS=['*.jpg', '*.mp4']
 
+IMAGE_PATH='blog/images'
+THUMBNAIL_DIR='img/thumbs'
+THUMBNAIL_SIZES = {
+    'tnsq': '100',
+    'tnwd': '100x?',
+    'tntl': '?x100',
+}
 
 
 EXTRA_PATH_METADATA={'extra/CNAME':{'path':'CNAME'},
                     'extra/robots.txt':{'path':'robots.txt'},
                     'extra/css/custom.css':{'path': 'css/custom.css'}, 
+                    'extra/img/favicon.ico':{'path': 'favicon.ico'}, 
                     'extra/img/hero-bg.jpg':{'path': 'img/hero-bg.jpg'}, 
                     'extra/img/main-bg-001.jpg':{'path': 'img/main-bg-001.jpg'}, 
                     'extra/img/main-bg-002.jpg':{'path': 'img/main-bg-002.jpg'}, 
                     'extra/img/main-bg-003.jpg':{'path': 'img/main-bg-003.jpg'}, 
+                    'extra/img/main-bg-004.jpg':{'path': 'img/main-bg-004.jpg'}, 
                     'extra/js/amtag_cloud.js':{'path': 'js/amtag_cloud.js'}, 
                     }
 

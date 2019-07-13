@@ -81,16 +81,23 @@ class _processor(object):
                     post_slug=json_result[0]
 
                 post_meta={'Title':'', 'Date':post_date, 'Slug':post_slug, 'Category':self.category, 'Tags':tags_text}
-                post_data=''.join(f'{x}:{y}\n' for (x,y) in post_meta.items())+post_text+'\n'
                 
+                meta_image=''
 
+                post_data='';
                 for fn in media_filenames:    
                     ext=path.splitext(fn)[-1].lower()
                     if ext=='.jpg':
                         post_data+='![instagram]({attach}images/'+fn+')\n'
+                        if meta_image=='':
+                            meta_image=path.splitext(fn)[0]+'_tntl.jpg'    
                     elif ext=='.mp4':
                         post_data+='\n[video]\n[download.mp4]({attach}images/'+fn+')\n'
 
+                if meta_image!='':
+                    post_meta['image']=meta_image
+
+                post_data=''.join(f'{x}:{y}\n' for (x,y) in post_meta.items())+post_text+'\n'+post_data
 
                 with open(path.join(self.out_path,path.splitext(filename)[0]+'.markdown'),'w+') as md:
                     md.write(post_data)   
