@@ -15,6 +15,7 @@ SITENAME = 'AnnaBake'
 CONTACTS_PERSON='Анна'
 CONTACTS_PHONE='+7(926)220-1610'
 CONTACTS_ADDRESS='Орехово-Зуево'
+CUSTOM_KEYWORDS=' Анна Торты Орехово-Зуево'
 
 THEME=annatheme.PATH
 JINJA_ENVIRONMENT=annatheme.ENVIRONMENT

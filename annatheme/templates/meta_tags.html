@@ -30,8 +30,9 @@
   {% for tag in item.tags %}
     <meta property="article:tag" content="{{ tag.name }}">
   {% endfor %}
-  <meta name="keywords" content="{% for tag in item.tags %} {{ tag.name }}, {% endfor %}">
-
+  <meta name="keywords" content="{% for tag in item.tags %} {{ tag.name }}, {% endfor %} {{CUSTOM_KEYWORDS}}">
+{% else %}
+  <meta name="keywords" content="{{CUSTOM_KEYWORDS}}">
 {% endif %}
 {% if item.category %}
   <meta property="article:section" content="{{ item.category.name }}">
