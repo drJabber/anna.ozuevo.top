@@ -1,5 +1,17 @@
 .has-hero-bg { background: url('/img/hero-bg.jpg') center center; background-size:cover; }
 /* .has-container-bg { background: url('/img/main-bg-001.jpg') repeat ; background-size:auto; } */
+.has-nav-bg::before { 
+    content: "";
+    background: url('/img/banner-011.png') top left;
+    background-repeat: repeat-x;
+    opacity: 0.8;
+    top: 0.8rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
 
 .has-container-bg::after {
     content: "";
@@ -12,6 +24,27 @@
     position: absolute;
     z-index: -1;   
   }
+
+.navbar {
+    background-color: transparent;
+}  
+
+.footer {
+    background-color: transparent;
+    padding: 2rem 1.5rem 2rem;
+}  
+
+.has-footer-bg::after { 
+    content: "";
+    background: url('/img/banner-006.jpg') repeat;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
 
 .has-transparent-bg {
     background-color: rgba(1,0,0, 0.2)
