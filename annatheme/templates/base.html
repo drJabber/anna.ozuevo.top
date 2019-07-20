@@ -2,8 +2,8 @@
 <html lang="{{ DEFAULT_LANG }}">
 <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
   <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width">
-  
+  <meta name="robots" content="index, follow" />  
+  <meta name="viewport" content="width=device-width" />
   <meta name="yandex-verification" content="{{YANDEX_VERIFICATION}}" />
 
   <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
@@ -34,7 +34,7 @@
 </head>
 
 <body id="index" class="home">
-<header class="hero is-danger {% if not article %}is-medium{% endif %} has-hero-bg">
+<header class="hero is-danger {% if not (article or page) %}is-medium{% endif %} has-hero-bg">
   <div class="hero-body">
     <div class="container">
       <nav class="navbar" >
@@ -58,7 +58,7 @@
     <div id="navMenu" class="navbar-menu">
         <div class="navbar-end">
           {% for title, link in MENUITEMS|reverse %}
-            <a class="navbar-item is-tab" href="{{ link }}">{{ title }}</a>
+              <a class="navbar-item is-tab" href="{{ link }}">{{ title }}</a>
           {% endfor %}
           {% if DISPLAY_CATEGORIES_ON_MENU %}
             {% for cat, null in categories|reverse %}
@@ -84,15 +84,17 @@
           {%  include 'mailchimp.html' %}
         {% endif %}
         {% if pages and DISPLAY_PAGES_ON_MENU %}
-          <p class="menu-label">{{OTHER_PAGES_WIDGET_NAME or "Other Pager"}}</p>
+          <p class="menu-label">{{OTHER_PAGES_WIDGET_NAME or "Other Pages"}}</p>
           <ul class="menu-list">
             {% if DISPLAY_PAGES_ON_MENU %}
               {% for pg in pages %}
+                {% if pg.category.name not in ['menu','other'] %}
                 <li><a {% if pg == page %}class="is-active"{% endif %}
                        href="{{ SITEURL }}/{{ pg.url }}">
                   <span class="icon is-small"><i class="fa fa-book"></i></span>
                   <span class="link-text">{{ pg.title }}</span>
                 </a></li>
+                {% endif %}
               {% endfor %}
             {% endif %}
           </ul>

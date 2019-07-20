@@ -7,10 +7,10 @@ sys.path.insert(0,'./annatheme')
 import annatheme
 
 
-DELETE_OUTPUT_DIRECTORY=True
+# DELETE_OUTPUT_DIRECTORY=True
 
 AUTHOR = 'dJabber'
-SITENAME = 'AnnaBake'
+SITENAME = 'Анна. Домашний кондитер'
 
 CONTACTS_PERSON='Анна'
 CONTACTS_PHONE='+7(926)220-1610'
@@ -20,6 +20,7 @@ CUSTOM_KEYWORDS=' Анна Торты Орехово-Зуево'
 THEME=annatheme.PATH
 JINJA_ENVIRONMENT=annatheme.ENVIRONMENT
 JINJA_FILTERS=annatheme.FILTERS
+# DISPLAY_CATEGORIES_ON_MENU=True
 
 LOCALE='ru_RU.utf8'
 DATE_FORMATS = {
@@ -30,7 +31,7 @@ DATE_FORMATS = {
 
 
 PLUGIN_PATHS=['plugins','pelican-plugins']
-PLUGINS=['assets','amtag_cloud','sitemap','thumbnailer','peligram']
+PLUGINS=['assets','amtag_cloud','sitemap','thumbnailer','jinja2content','peligram','pelican_extra']
 
 OUTPUT_PATH='output'
 PATH = 'content'
@@ -52,6 +53,11 @@ THUMBNAIL_SIZES = {
 }
 
 
+EXTRA_DIRECTORIES={
+    'extra/fonts/gotham':{'path':'fonts'}, 
+    'extra/fonts/circe':{'path':'fonts'}, 
+}
+
 EXTRA_PATH_METADATA={'extra/CNAME':{'path':'CNAME'},
                     'extra/robots.txt':{'path':'robots.txt'},
                     'extra/css/custom.css':{'path': 'css/custom.css'}, 
@@ -68,6 +74,7 @@ EXTRA_PATH_METADATA={'extra/CNAME':{'path':'CNAME'},
                     }
 
 ARTICLE_PATHS=['blog']
+PAGE_PATHS=['pages','menu','other']
 ARTICLE_SAVE_AS='articles/{date:%Y}/{slug}.html'
 ARTICLE_URL='articles/{date:%Y}/{slug}.html'
 #ARTICLE_SAVE_AS='articles/{slug}.html'
@@ -115,15 +122,21 @@ AMTAG_CLOUD=True
 AMTAG_CLOUD_MAX_ITEMS=50 #number of different tags that can appear in tag cloud
 
 
+
 MARKDOWN = {
+    # 'extensions':['markdown.extensions.codehilite','markdown.extensions.extra','markdown.extensions.meta','md_video'],
     'extension_configs': {
-        'markdown.extensions.codehilite': {'css_class': 'highlight'},
-        'markdown.extensions.extra': {},
-        'markdown.extensions.meta': {},
+        'codehilite': {'css_class': 'highlight'},
+        'meta': {},
+        'extra': {},
         'md_video':{},
     },
     'output_format': 'html5',
 }
 
+MENUITEMS = [('Заказать','pages/order.html')]
+
+
 YANDEX_METRICA=54428389
 YANDEX_VERIFICATION='b6a6b827587b30e8'
+

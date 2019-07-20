@@ -25,8 +25,8 @@ def set_default_settings(settings):
 def init_default_config(pelican):
     from pelican.settings import DEFAULT_CONFIG
     set_default_settings(DEFAULT_CONFIG)
-    if(pelican):
-            set_default_settings(pelican.settings)
+    if pelican:
+        set_default_settings(pelican.settings)
 
 
 def generate_tag_cloud(generator):
@@ -37,11 +37,15 @@ def generate_tag_cloud(generator):
 
     tag_cloud = sorted(tag_cloud.items(), key=itemgetter(1))#sort list of tuples (tag,count) by count 
     tag_cloud=list(map(lambda e: (e[1][0],e[1][1], e[0]*e[0]*e[0]), enumerate(tag_cloud)))#make list of tuples (tag,count,index)
+    # logger.debug(f"{len(tag_cloud)}")
 
-    tag_cloud = tag_cloud[:generator.settings.get('AMTAG_CLOUD_MAX_ITEMS'):-1]#slice MAX_ITMES elements
+    tag_cloud = tag_cloud[generator.settings.get('AMTAG_CLOUD_MAX_ITEMS')::-1]#slice MAX_ITMES elements
+    
+    # logger.debug(f"{len(tag_cloud)}  of {generator.settings.get('AMTAG_CLOUD_MAX_ITEMS')}")
 
     #generate list of dicts (tag, count, index) to create json in html
     def generate_am_tag(tag, count,index):
+        # logger.debug(tag.name)
         return {"tag":tag.name, "count":count, "index":index, "url":tag.url} 
 
     tag_cloud = [

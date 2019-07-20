@@ -73,3 +73,154 @@
 .md-video {
     width: 80%;
 }
+
+.menu-list a.is-active{
+    background-color: #3273dcC0
+}
+
+.menu-list a:hover{
+    background-color: #4a4a4aA0
+}
+
+
+
+.article-body h1.title{
+    padding: 10px 15px 10px 15px;
+    margin: 100px 0 10px 0;
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'GothamPro';
+    position: relative;
+    /* z-index: 3; */
+}
+
+.article-body h1 span {
+    border-bottom: 2px solid rgba(222, 51, 97, 0.5);
+    padding-bottom: 2px;
+}
+
+.article-body p{
+    color: #202020;
+    font-family: 'Circe';
+    text-indent:20px;
+    text-align:justify;
+}
+
+.article-body ul{
+    /* margin-top: 0.75em; */
+    list-style-type: disc;
+    font-size: 20px;
+}
+
+.article-body ul li{
+    color: #202020;
+    font-family: 'GothamPro';
+    text-indent:20px;
+    text-align:justify;
+
+    padding: 10px 0;
+
+    left: 1.5em;
+    padding-left: 1em;
+}
+
+.article-body ul li p{
+    color: #202020;
+    font-family: 'GothamPro';
+    text-indent:20px;
+    text-align:justify;
+
+    padding: 10px 0;
+
+    left: 1.5em;
+    padding-left: 1em;
+}
+
+.article-body p strong {
+    color: #202020;
+    font-family: 'GothamPro';
+    font-weight: bold;
+    font-size:18px;
+    text-indent:20px;
+    text-align:justify;
+}
+
+
+    /** Gotham **/
+    @font-face {
+        font-family: 'GothamPro';
+        src: url('/fonts/GothamPro-Light.eot?') format('eot'), 
+             url('/fonts/GothamPro-Light.otf')  format('opentype'),
+             url('/fonts/GothamPro-Light.woff') format('woff'), 
+             url('/fonts/GothamPro-Light.ttf')  format('truetype'),
+             url('/fonts/GothamPro-Light.svg#GothamPro-Light') format('svg');
+             font-weight: 300;
+             font-style: normal;
+             font-display: swap;
+         }
+    
+    @font-face {
+        font-family: 'GothamPro';
+        src: url('/fonts/GothamPro-Medium.eot?') format('eot'), 
+             url('/fonts/GothamPro-Medium.otf')  format('opentype'),
+             url('/fonts/GothamPro-Medium.woff') format('woff'), 
+             url('/fonts/GothamPro-Medium.ttf')  format('truetype'),
+             url('/fonts/GothamPro-Medium.svg#GothamPro-Medium') format('svg');
+             font-weight: 500;
+             font-style: normal;
+             font-display: swap;
+         }
+    
+    @font-face {
+    font-family: 'GothamPro';
+    src: url('/fonts/GothamPro-Bold.eot?') format('eot'), 
+            url('/fonts/GothamPro-Bold.otf')  format('opentype'),
+            url('/fonts/GothamPro-Bold.woff') format('woff'), 
+            url('/fonts/GothamPro-Bold.ttf')  format('truetype'),
+            url('/fonts/GothamPro-Bold.svg#GothamPro-Bold') format('svg');
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+    
+    @font-face {
+    font-family: 'GothamPro';
+    src: url('/fonts/GothamPro.eot?') format('eot'), 
+            url('/fonts/GothamPro.otf')  format('opentype'),
+            url('/fonts/GothamPro.woff') format('woff'), 
+            url('/fonts/GothamPro.ttf')  format('truetype'),
+            url('/fonts/GothamPro.svg#GothamPro') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+    /** Circe **/
+    @font-face {
+        font-family: 'Circe';
+        src: url('/fonts/Circe-Light.eot');
+        src: url('/fonts/Circe-Light.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Circe-Light.woff') format('woff'),
+        url('/fonts/Circe-Light.ttf') format('truetype'),
+        url('/fonts/Circe-Light.svg#webfont') format('svg');
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Circe';
+        src: url('/fonts/Circe-Regular.eot');
+        src: url('/fonts/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Circe-Regular.woff') format('woff'),
+        url('/fonts/Circe-Regular.ttf') format('truetype'),
+        url('/fonts/Circe-Regular.svg#webfont') format('svg');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+    
