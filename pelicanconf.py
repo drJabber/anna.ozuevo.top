@@ -15,7 +15,7 @@ SITENAME = 'Анна. Домашний кондитер'
 CONTACTS_PERSON='Анна'
 CONTACTS_PHONE='+7(926)220-1610'
 CONTACTS_ADDRESS='Орехово-Зуево'
-CUSTOM_KEYWORDS=' Анна Торты Орехово-Зуево'
+CUSTOM_KEYWORDS=' Анна Торты Капкейки Трайфлы Кондитер Кэнди-бар Орехово-Зуево'
 
 THEME=annatheme.PATH
 JINJA_ENVIRONMENT=annatheme.ENVIRONMENT
@@ -36,7 +36,6 @@ PLUGINS=['assets','amtag_cloud','sitemap','thumbnailer','jinja2content','peligra
 OUTPUT_PATH='output'
 PATH = 'content'
 STATIC_PATHS=['extra']
-# SITEURL='/'
 
 INSTAGRAM_DATA_PATH='data'
 PELIGRAM_OUTPUT_MARKDOWN_DIR='blog'
@@ -83,7 +82,7 @@ ARTICLE_URL='articles/{date:%Y}/{slug}.html'
 HEADER_COVER='static/img/cover.jpg'
 
 TIMEZONE = 'Europe/Moscow'
-SITEURL='https://anna.ozuevo.top'
+SITEURL=''
 
 
 DEFAULT_LANG = 'ru'
@@ -139,4 +138,8 @@ MENUITEMS = [('Заказать','pages/order.html')]
 
 YANDEX_METRICA=54428389
 YANDEX_VERIFICATION='b6a6b827587b30e8'
+GOOGLE_ANALYTICS = "UA-143756815-1"
+GOOGLE_VERIFICATION_META='bx7hlv70iBp8SsKAqjSo4swTvC1iIaUir7rXQPGNCSs'
+
+META_DESCRIPTION='Сайт о домашней кондитерской Анны в г.Орехово-Зуево Московской области'
 

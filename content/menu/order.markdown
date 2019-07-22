@@ -2,7 +2,7 @@ Title:Заказать
 Date:2019-06-01
 Category:menu
 Slug:order
-
+Summary: Страничка о том, как сделать заказ
 
 <h1 class='title'>
     <span>

@@ -5,10 +5,13 @@
   <meta name="robots" content="index, follow" />  
   <meta name="viewport" content="width=device-width" />
   <meta name="yandex-verification" content="{{YANDEX_VERIFICATION}}" />
+  <meta name="google-site-verification" content="{{GOOGLE_VERIFICATION_META}}" />
 
-  <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+  <title>{% block title %}{{SITENAME}}{% endblock %}</title>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+
   
   <script src="https://www.amcharts.com/lib/4/core.js"></script>
   <script src="https://www.amcharts.com/lib/4/charts.js"></script>
@@ -30,6 +33,7 @@
     {% endif %}
   {% endfor %}
   {% block tags %}
+    {% include 'meta_tags.html' %}
   {% endblock %}
 </head>
 
@@ -58,7 +62,7 @@
     <div id="navMenu" class="navbar-menu">
         <div class="navbar-end">
           {% for title, link in MENUITEMS|reverse %}
-              <a class="navbar-item is-tab" href="{{ link }}">{{ title }}</a>
+              <a class="navbar-item is-tab" href="{{SITEURL}}/{{ link }}">{{ title }}</a>
           {% endfor %}
           {% if DISPLAY_CATEGORIES_ON_MENU %}
             {% for cat, null in categories|reverse %}

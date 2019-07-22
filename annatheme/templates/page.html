@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}{{ page.title|striptags }}{% endblock %}
+{% block title %} {%if page.title %}{{ page.title|striptags }} {% else %}{{SITEMANE}}{% endif %}{% endblock %}
 {% block tags %}
   {% with item=page %}
     {% include 'meta_tags.html' %}

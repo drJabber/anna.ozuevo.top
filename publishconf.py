@@ -18,6 +18,7 @@ RELATIVE_URLS = False
 
 YANDEX_METRICA=54428389
 YANDEX_VERIFICATION='b6a6b827587b30e8'
+GOOGLE_ANALYTICS = "UA-143756815-1"
 
 # FEED_ALL_ATOM = 'feeds/all.atom.xml'
 # CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
@@ -27,7 +28,6 @@ DELETE_OUTPUT_DIRECTORY = False
 # Following items are often useful when publishing
 
 #DISQUS_SITENAME = ""
-GOOGLE_ANALYTICS = "UA-143756815-1"
 
 SITEMAP = {
     'format': 'xml',
@@ -42,3 +42,5 @@ SITEMAP = {
         'pages': 'daily'
     }
 }
+
+
