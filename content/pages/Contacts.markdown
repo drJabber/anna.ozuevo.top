@@ -2,8 +2,21 @@ Title: Контакты
 Date: 2019-06-27
 Category: contacts
 Slug: contacts
-Summary: контакты
+Summary: Контакты - как со мной связаться
 
-Анна
-+7 926 220-1610
-Орехово-Зуево
+
+<h1 class='title'>
+    <span>
+        Контакты
+    </span>
+</h1>
+
+**Анна, ваш домашний кондитер.**
+
+**Телефон: +7 926 220-1610 (WhatsApp, Viber, Telegram)**
+
+**Email:** **[ajabbe@mail.ru](mailto:ajabbe@mail.ru)**
+
+<b>[Инстаграм](https://www.instagram.com/anna.sutiagina)</b>
+
+**Орехово-Зуево**
