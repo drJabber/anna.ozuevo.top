@@ -39,13 +39,13 @@ def generate_tag_cloud(generator):
     tag_cloud=list(map(lambda e: (e[1][0],e[1][1], e[0]*e[0]*e[0]), enumerate(tag_cloud)))#make list of tuples (tag,count,index)
     # logger.debug(f"{len(tag_cloud)}")
 
-    tag_cloud = tag_cloud[generator.settings.get('AMTAG_CLOUD_MAX_ITEMS')::-1]#slice MAX_ITMES elements
+    tag_cloud = tag_cloud[len(tag_cloud):len(tag_cloud)-min(generator.settings.get('AMTAG_CLOUD_MAX_ITEMS')-1,len(tag_cloud)):-1]#slice MAX_ITMES elements
     
     # logger.debug(f"{len(tag_cloud)}  of {generator.settings.get('AMTAG_CLOUD_MAX_ITEMS')}")
 
     #generate list of dicts (tag, count, index) to create json in html
     def generate_am_tag(tag, count,index):
-        # logger.debug(tag.name)
+        logger.debug(f"{tag.name}, {count}, {index}")
         return {"tag":tag.name, "count":count, "index":index, "url":tag.url} 
 
     tag_cloud = [

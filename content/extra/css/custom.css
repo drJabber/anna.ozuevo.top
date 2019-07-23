@@ -42,7 +42,7 @@
 .menu{
     background-color: #ff1f4bb0;
     font-size:1.25rem;
-    padding:20rem, 2.5rem;
+    margin-top:10rem;
 }
 
 .tag-cloud{
@@ -180,6 +180,17 @@
 .padding-xs{
     padding: 0.25rem;
 
+}
+
+.margin-top-xl{
+    margin-top:7rem;
+}
+
+h2.subtitle{
+    font-size:1.25rem;
+    font-weight:700;
+    letter-spacing:0.125rem;
+    text-transform: uppercase;
 }
 
     /** Gotham **/
