@@ -3,7 +3,7 @@ Slug: twokilo
 Category: other
 Summary: Страничка про минимальное ограничение веса изделия в 2 кило
 
-<h1 class='title'>
+<h1 class='title is-4'>
     <span>
 История про 2 кило
     </span>

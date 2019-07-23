@@ -4,7 +4,7 @@ Category:menu
 Slug:order
 Summary: Страничка о том, как сделать заказ
 
-<h1 class='title'>
+<h1 class='title is-4 '>
     <span>
         Информация о заказе
     </span>

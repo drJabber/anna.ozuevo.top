@@ -118,16 +118,19 @@
           {% include 'social.html' %}
         {% endif %}
 
-        {% if AMTAG_CLOUD %}
-          {% include 'amtag_cloud.html' %}
-        {% endif %}
-
         {% if LICENSE %}
           <p class="menu-label">License</p>
           {{ LICENSE | license | safe }}
         {% endif %}
 
       </aside>
+      <aside class="tag-cloud" >
+          {% if AMTAG_CLOUD %}
+          {% include 'amtag_cloud.html' %}
+          {% endif %}
+
+
+      </aside>  
     </div>
   </div>
 </div>

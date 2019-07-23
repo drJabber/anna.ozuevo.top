@@ -95,7 +95,8 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('You can modify those links in your config file', '#'),)
+LINKS = []
+# LINKS = (('You can modify those links in your config file', '#'),)
 LINKS_WIDGET_NAME='Ссылки'
 
 OTHER_PAGES_WIDGET_NAME="Избранное"

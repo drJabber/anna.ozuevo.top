@@ -5,7 +5,7 @@ Slug: contacts
 Summary: Контакты - как со мной связаться
 
 
-<h1 class='title'>
+<h1 class='title is-4'>
     <span>
         Контакты
     </span>
