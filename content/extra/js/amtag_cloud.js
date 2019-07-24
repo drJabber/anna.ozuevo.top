@@ -20,9 +20,11 @@ am4core.ready(function() {
     series.heatRules.push({
      "target": series.labels.template,
      "property": "fill",
-     "min": am4core.color("#0aa67b"),
-     "max": am4core.color("#e2ff84"),
-     "dataField": "value"
+    //  "min": am4core.color("#0aa67b"),
+    //  "max": am4core.color("#e2ff84"),
+     "min": am4core.color("#fff"),
+     "max": am4core.color("#fff"),
+    "dataField": "value"
     });
     
     series.labels.template.url = tagcloud_url_root+"{url}";

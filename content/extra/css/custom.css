@@ -30,7 +30,8 @@
 }  
 
 .has-main-background-color{
-    background-color: #ff1f4bb0;
+    /* background-color: #ff1f4b; */
+    background-color: #ff7373;  
     color:#fff;
 }
 
@@ -38,10 +39,19 @@
     color:#fff;
 }
 
+.has-menu-border{
+    border: 1px solid;
+}
+
+.is-border-rounded{
+    border-radius: 1rem;
+}
+
 .navbar-item{
     flex-shrink: 1;
     /* background-color: #ff1f40e0; */
 }
+
 
 .footer {
     background-color: transparent;
@@ -62,7 +72,7 @@
     color:#fff;
     font-size:1.25rem;
     font-weight: bold;
-    padding: 0.2em;
+    padding: 0.2em 1em;
 }
 
 .menu-list a.is-active{
@@ -76,7 +86,11 @@
 
 .menu-list a{
     color:#fff;
-    padding: 0.5em, 1em
+    padding: 0.2em 1.5em
+}
+
+.menu-label:not(:last-child) {
+    margin-bottom: 0.5em;
 }
 
 .has-footer-bg::after { 

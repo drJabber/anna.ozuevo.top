@@ -1,6 +1,6 @@
 <nav class="pagination is-centered">
   {% if articles_page.has_previous() %}
-    <a class="pagination-previous"
+    <a class="pagination-previous  has-main-background-color"
        href="{{ SITEURL }}/{{ articles_previous_page.url }}">
       Сюда
     </a>
@@ -10,7 +10,7 @@
     </a>
   {% endif %}
   {% if articles_page.has_next() %}
-    <a class="pagination-next"
+    <a class="pagination-next has-main-background-color"
        href="{{ SITEURL }}/{{ articles_next_page.url }}">
       Туда
     </a>
