@@ -43,7 +43,7 @@
     <div class="container">
       <nav class="navbar" >
         <div class="navbar-brand">
-          <a class="navbar-item title is-3{% if output_file == "index.html" %} is-active{% endif %}"
+          <a class="navbar-item title is-3{% if output_file == "index.html" %} is-active{% else %} has-main-background-color {% endif %} is-danger"
              href="{{ SITEURL }}/">{{ SITENAME }}</a>
         </div>
       </nav>
@@ -62,7 +62,7 @@
     <div id="navMenu" class="navbar-menu">
         <div class="navbar-end">
           {% for title, link in MENUITEMS|reverse %}
-              <a class="navbar-item is-tab" href="{{SITEURL}}/{{ link }}">{{ title }}</a>
+              <a class="navbar-item is-tab {% if page and (page.url==link) %}is-active{% endif %}" href="{{SITEURL}}/{{ link }}">{{ title }}</a>
           {% endfor %}
           {% if DISPLAY_CATEGORIES_ON_MENU %}
             {% for cat, null in categories|reverse %}
