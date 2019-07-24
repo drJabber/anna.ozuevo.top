@@ -10,6 +10,8 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
+LOAD_CONTENT_CACHE=True
+
 PLUGINS=['assets','amtag_cloud','sitemap','peligram','jinja2content','thumbnailer']
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
