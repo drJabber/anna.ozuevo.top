@@ -59,6 +59,7 @@ EXTRA_DIRECTORIES={
 
 EXTRA_PATH_METADATA={'extra/CNAME':{'path':'CNAME'},
                     'extra/robots.txt':{'path':'robots.txt'},
+                    'extra/css/bulma.cake.css':{'path': 'css/bulma.css'}, 
                     'extra/css/custom.css':{'path': 'css/custom.css'}, 
                     'extra/img/favicon.ico':{'path': 'favicon.ico'}, 
                     'extra/img/banner-005.jpg':{'path': 'img/banner-005.jpg'}, 
@@ -100,7 +101,7 @@ LINKS = []
 LINKS_WIDGET_NAME='Ссылки'
 
 OTHER_PAGES_WIDGET_NAME="Избранное"
-OTHER_ARTICLES_WIDGET_NAME="Посты"
+OTHER_ARTICLES_WIDGET_NAME="Мои работы"
 
 
 # Social widget

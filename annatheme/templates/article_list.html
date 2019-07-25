@@ -4,16 +4,16 @@
     <div class="columns is-1 is-multiline">
       {% for article in article_list %}
         <div class="column is-half-tablet is-one-third-desktop">
-          <div class="card is-fullwidth is-fullheight  has-transparent-bg">
+          <div class="card is-fullwidth is-fullheight  has-light-bg is-border-rounded-s-r">
             <div class="card-content is-paddingless">
               <a href="{{ SITEURL }}/{{ article.url }}">
                 <div class="columns is-gapless">
-                  <div class="column is-one-quarter">
+                  <div class="column is-one-quarter-desktop is-one-quarter-tablet is-one-third-mobile">
                       {% if article.image %}
-                        <img src="/img/thumbs/{{ article.image }}" class="img-responsive float-left mr-4 padding-xs" alt="{{ article.title }}">
+                        <img src="/img/thumbs/{{ article.image }}" class="img-responsive float-left mr-4 padding-s is-border-rounded-s-r" alt="{{ article.title }}">
                       {% endif %}
                   </div>
-                  <div class="column">
+                  <div class="column is-fullwidth">
                       <h3 class="title is-5">{{ article.title }}</h3>
 
                       <div class="heading subtitle">{{ article.locale_date }}</div>

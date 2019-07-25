@@ -1,21 +1,21 @@
 <nav class="pagination is-centered">
   {% if articles_page.has_previous() %}
-    <a class="pagination-previous  has-main-background-color"
+    <a class="pagination-previous  is-active is-danger"
        href="{{ SITEURL }}/{{ articles_previous_page.url }}">
       Сюда
     </a>
   {% else %}
-    <a class="pagination-previous" href="#" disabled>
+    <a class="pagination-previous  is-danger " href="#" disabled>
       
     </a>
   {% endif %}
   {% if articles_page.has_next() %}
-    <a class="pagination-next has-main-background-color"
+    <a class="pagination-next is-active is-danger"
        href="{{ SITEURL }}/{{ articles_next_page.url }}">
       Туда
     </a>
   {% else %}
-    <a class="pagination-next" href="#" disabled>
+    <a class="pagination-next  is-danger " href="#"  disabled>
       Туда
     </a>
   {% endif %}

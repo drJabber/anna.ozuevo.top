@@ -10,7 +10,7 @@
   <title>{% block title %}{{SITENAME}}{% endblock %}</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"> -->
 
   
   <script src="https://www.amcharts.com/lib/4/core.js"></script>
@@ -38,20 +38,20 @@
 </head>
 
 <body id="index" class="home">
-<header class="hero is-danger {% if not (article or page) %}is-medium{% endif %} has-hero-bg">
+<header class="hero is-primary {% if not (article or page) %}is-medium{% endif %} has-hero-bg">
   <div class="hero-body">
     <div class="container">
       <nav class="navbar" >
         <div class="navbar-brand">
-          <a class="navbar-item title is-3{% if output_file == "index.html" %} is-active{% else %} has-main-background-color {% endif %} is-danger"
+          <a class="navbar-item title is-3 {% if output_file == "index.html" %} is-active is-danger {% else %} is-brand-inactive {% endif %} "
              href="{{ SITEURL }}/">{{ SITENAME }}</a>
         </div>
       </nav>
     </div>
   </div>
 </header>
-
-<nav class="navbar has-shadow is-hidden-print is-danger ">
+  
+<nav class="navbar has-shadow is-hidden-print is-primary ">
   <div class="container">
     <div class="navbar-center"></div>
     <span id="navToggle" class="navbar-burger">
@@ -83,48 +83,49 @@
     </div>
 
     <div class="column is-one-quarter-desktop is-one-third-tablet is-hidden-print">
-      <aside class="menu has-main-background-color has-menu-border is-border-rounded">
-        {% if MAILCHIMP %}
-          {%  include 'mailchimp.html' %}
-        {% endif %}
-        {% if pages and DISPLAY_PAGES_ON_MENU %}
-          <p class="menu-label">{{OTHER_PAGES_WIDGET_NAME or "Other Pages"}}</p>
-          <ul class="menu-list">
-            {% if DISPLAY_PAGES_ON_MENU %}
-              {% for pg in pages %}
-                {% if pg.category.name not in ['menu','other'] %}
-                <li><a {% if pg == page %}class="is-active"{% endif %}
-                       href="{{ SITEURL }}/{{ pg.url }}">
-                  <span class="icon is-small"><i class="fa fa-book"></i></span>
-                  <span class="link-text">{{ pg.title }}</span>
-                </a></li>
-                {% endif %}
-              {% endfor %}
+      <aside class="menu is-primary has-menu-border is-border-rounded-n-r">
+        <div class="container">
+            {% if MAILCHIMP %}
+              {%  include 'mailchimp.html' %}
             {% endif %}
-          </ul>
-        {% endif %}
-        {% if LINKS %}
-          <p class="menu-label">{{ LINKS_WIDGET_NAME or "Links" }}</p>
-          <ul class="menu-list">
-            {% for name, link in LINKS %}
-              <li><a href="{{ link }}">
-                <span class="icon is-small"><i class="fa fa-globe fa-fw"></i></span>
-                <span class="link-text">{{ name }}</span>
-              </a></li>
-            {% endfor %}
-          </ul>
-        {% endif %}
-        {% if SOCIAL or FEED_ALL_ATOM or FEED_ALL_RSS %}
-          {% include 'social.html' %}
-        {% endif %}
-
-        {% if LICENSE %}
-          <p class="menu-label">License</p>
-          {{ LICENSE | license | safe }}
-        {% endif %}
-
+            {% if pages and DISPLAY_PAGES_ON_MENU %}
+              <p class="menu-label">{{OTHER_PAGES_WIDGET_NAME or "Other Pages"}}</p>
+              <ul class="menu-list">
+                {% if DISPLAY_PAGES_ON_MENU %}
+                  {% for pg in pages %}
+                    {% if pg.category.name not in ['menu','other'] %}
+                    <li><a {% if pg == page %}class="is-active"{% endif %}
+                          href="{{ SITEURL }}/{{ pg.url }}">
+                      <span class="icon is-small"><i class="fa fa-book"></i></span>
+                      <span class="link-text">{{ pg.title }}</span>
+                    </a></li>
+                    {% endif %}
+                  {% endfor %}
+                {% endif %}
+              </ul>
+            {% endif %}
+            {% if LINKS %}
+              <p class="menu-label">{{ LINKS_WIDGET_NAME or "Links" }}</p>
+              <ul class="menu-list">
+                {% for name, link in LINKS %}
+                  <li><a href="{{ link }}">
+                    <span class="icon is-small"><i class="fa fa-globe fa-fw"></i></span>
+                    <span class="link-text">{{ name }}</span>
+                  </a></li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+            {% if SOCIAL or FEED_ALL_ATOM or FEED_ALL_RSS %}
+              {% include 'social.html' %}
+            {% endif %}
+    
+            {% if LICENSE %}
+              <p class="menu-label">License</p>
+              {{ LICENSE | license | safe }}
+            {% endif %}
+          </div>
       </aside>
-      <aside class="tag-cloud has-main-background-color  has-menu-border is-border-rounded" >
+      <aside class="tag-cloud is-primary has-menu-border is-border-rounded-n-r" >
           {% if AMTAG_CLOUD %}
           {% include 'amtag_cloud.html' %}
           {% endif %}
@@ -139,7 +140,7 @@
   <div class="container">
       <div class="columns  is-size-5-fullhd has-text-centered has-text-weight-bold">
           <div class="column is-one-third-tablet is-one-quarter-desktop">
-              <div class="credits  has-main-background-color">
+              <div class="credits  is-primary">
                       <a href="https://blog.getpelican.com/">Pelican</a> 
                       <a href="https://bulma.io">Bulma</a> 
                       <a href="https://t.me/dJabbber">dJabber</a>
@@ -148,7 +149,7 @@
           <div class="column is-two-third-tablet is-three-quarter-desktop">
             <div class="columns">
                 <div class="column is-one-third" ></div>
-                <div class="column is-one-third has-main-background-color">
+                <div class="column is-one-third is-primary">
                     {{CONTACTS_PERSON}}, {{CONTACTS_PHONE}}, {{CONTACTS_ADDRESS}}
                 </div>
             </div>
