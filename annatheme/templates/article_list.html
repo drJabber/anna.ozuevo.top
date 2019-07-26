@@ -7,10 +7,10 @@
           <div class="card is-fullwidth is-fullheight  has-light-bg is-border-rounded-s-r">
             <div class="card-content is-paddingless">
               <a href="{{ SITEURL }}/{{ article.url }}">
-                <div class="columns is-gapless">
+                <div class="columns is-mobile is-gapless">
                   <div class="column is-one-quarter-desktop is-one-quarter-tablet is-one-third-mobile">
                       {% if article.image %}
-                        <img src="/img/thumbs/{{ article.image }}" class="img-responsive float-left mr-4 padding-s is-border-rounded-s-r" alt="{{ article.title }}">
+                        <img src="/img/thumbs/{{ article.image }}" class="img-responsive float-left mr-4 padding-s is-border-rounded-n-r" alt="{{ article.title }}">
                       {% endif %}
                   </div>
                   <div class="column is-fullwidth">
