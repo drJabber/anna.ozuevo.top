@@ -9,7 +9,7 @@ import annatheme
 
 # DELETE_OUTPUT_DIRECTORY=True
 
-AUTHOR = 'dJabber'
+AUTHOR = 'Анна'
 SITENAME = 'Анна. Домашний кондитер'
 
 CONTACTS_PERSON='Анна'
