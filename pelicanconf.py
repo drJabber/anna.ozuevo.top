@@ -10,12 +10,12 @@ import annatheme
 # DELETE_OUTPUT_DIRECTORY=True
 
 AUTHOR = 'Анна'
-SITENAME = 'Анна. Домашний кондитер'
+SITENAME = 'Анна. Домашний кондитер. Орехово-Зуево'
 
 CONTACTS_PERSON='Анна'
 CONTACTS_PHONE='+7(926)220-1610'
 CONTACTS_ADDRESS='Орехово-Зуево'
-CUSTOM_KEYWORDS=' Анна Торты Капкейки Трайфлы Кондитер Кэнди-бар Орехово-Зуево'
+CUSTOM_KEYWORDS=' Анна Кондитер Орехово-Зуево, Торты, Капкейки, Трайфлы, Кондитер, Кэнди-бар,'
 
 THEME=annatheme.PATH
 JINJA_ENVIRONMENT=annatheme.ENVIRONMENT

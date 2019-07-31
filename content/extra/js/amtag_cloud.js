@@ -10,8 +10,8 @@ am4core.ready(function() {
     series.randomness = 0.4;
     // series.rotationThreshold = 0.7;
     // series.labelsContainer.rotation=-15;
-    series.minFontSize = am4core.percent(5);    
-    series.maxFontSize = am4core.percent(40);
+    series.minFontSize = am4core.percent(3);    
+    // series.maxFontSize = am4core.percent(40);
 
     
     series.data = tagcloud_series_data;
