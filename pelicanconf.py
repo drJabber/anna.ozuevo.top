@@ -62,6 +62,8 @@ EXTRA_PATH_METADATA={'extra/CNAME':{'path':'CNAME'},
                     'extra/css/bulma.cake.css':{'path': 'css/bulma.css'}, 
                     'extra/css/custom.css':{'path': 'css/custom.css'}, 
                     'extra/img/favicon.ico':{'path': 'favicon.ico'}, 
+
+                    'extra/img/anna-vcard.png':{'path': 'img/anna-vcard.png'}, 
                     'extra/img/banner-005.jpg':{'path': 'img/banner-005.jpg'}, 
                     'extra/img/banner-006.jpg':{'path': 'img/banner-006.jpg'}, 
                     'extra/img/banner-011.png':{'path': 'img/banner-011.png'}, 
