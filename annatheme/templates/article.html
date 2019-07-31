@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 {% block title %} 
-   {% if article.title %}
+   {% if (article.title) and (article.title!='') %}
      {{ article.title|striptags }} 
    {% else %}
-     {{SITEMANE}}
+     {{ SITENAME }}
    {% endif %}
 {% endblock %}
 {% block tags %}
