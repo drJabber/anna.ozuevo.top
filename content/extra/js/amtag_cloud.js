@@ -8,8 +8,8 @@ am4core.ready(function() {
     chart.fontFamily = "Courier New";
     var series = chart.series.push(new am4plugins_wordCloud.WordCloudSeries());
     series.randomness = 0.4;
-    series.rotationThreshold = 0.7;
-    series.labelsContainer.rotation=-15;
+    // series.rotationThreshold = 0.7;
+    // series.labelsContainer.rotation=-15;
     series.minFontSize = am4core.percent(5);    
     series.maxFontSize = am4core.percent(40);
 
