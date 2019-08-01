@@ -91,8 +91,12 @@ SITEURL=''
 DEFAULT_LANG = 'ru'
 
 # Feed generation is usually not desired when developing
+# FEED_DOMAIN=SITEURL
 FEED_ALL_ATOM = None
+FEED_ALL_RSS=None
 CATEGORY_FEED_ATOM = None
+CATEGORY_FEED_RSS = None
+TAG_FEED_RSS = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
