@@ -24,9 +24,12 @@ except ImportError:
     enabled = False
 
 class YaWriter(Writer):
+    
     def __init__(self, *args, **kwargs):
         """Class initializer"""
         super(YaWriter, self).__init__(*args, **kwargs)
+        self.RE_EMOJI = re.compile('[\U00010000-\U0010ffff]', flags=re.UNICODE)
+
 
     def _create_new_feed(self, *args):
         """Helper function (called by the super Writer class) which will initialize
@@ -75,7 +78,7 @@ class YaWriter(Writer):
             title=title,
             link=link,
             unique_id=get_tag_uri(link, item.date),
-            description=description,
+            description=self.RE_EMOJI.sub(r'',description),
             turbo_content="<![CDATA[{}]]>".format(item.get_content(self.site_url)),
             categories=item.tags if hasattr(item, 'tags') else None,
             author_name=getattr(item, 'author', ''),
