@@ -23,14 +23,20 @@ YANDEX_VERIFICATION='b6a6b827587b30e8'
 GOOGLE_ANALYTICS = "UA-143756815-1"
 
 FEED_DOMAIN=SITEURL
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
-FEED_ALL_RSS='feeds/all.rss.xml'
-CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
-CATEGORY_FEED_RSS = 'feeds/{slug}.rss.xml'
-TAG_FEED_RSS = 'feeds/tag_{slug}.rss.xml'
-TRANSLATION_FEED_ATOM = None
-AUTHOR_FEED_ATOM = None
-AUTHOR_FEED_RSS = None
+# FEED_ALL_ATOM = 'feeds/all.atom.xml'
+# FEED_ALL_RSS='feeds/all.rss.xml'
+# CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
+# CATEGORY_FEED_RSS = 'feeds/{slug}.rss.xml'
+# TAG_FEED_RSS = 'feeds/tag_{slug}.rss.xml'
+# TRANSLATION_FEED_ATOM = None
+# AUTHOR_FEED_ATOM = None
+# AUTHOR_FEED_RSS = None
+
+FEED_DOMAIN=SITEURL
+YA_FEED_ALL_RSS='yafeeds/all.rss.xml'
+YA_CATEGORY_FEED_RSS = 'yafeeds/{slug}.rss.xml'
+YA_TAG_FEED_RSS = 'yafeeds/tag_{slug}.rss.xml'
+YA_AUTHOR_FEED_RSS = None
 
 DELETE_OUTPUT_DIRECTORY = False
 
