@@ -31,7 +31,7 @@ DATE_FORMATS = {
 
 
 PLUGIN_PATHS=['plugins','pelican-plugins']
-PLUGINS=['assets','amtag_cloud','sitemap','thumbnailer','jinja2content','peligram','pelican_extra']
+PLUGINS=['assets','amtag_cloud','sitemap','thumbnailer','jinja2content','peligram','pelican_extra','yafeeds_plugin']
 
 OUTPUT_PATH='output'
 PATH = 'content'
@@ -100,6 +100,13 @@ TAG_FEED_RSS = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
+
+FEED_DOMAIN=SITEURL
+YA_FEED_ALL_RSS='yafeeds/all.rss.xml'
+YA_CATEGORY_FEED_RSS = 'yafeeds/{slug}.rss.xml'
+YA_TAG_FEED_RSS = 'yafeeds/tag_{slug}.rss.xml'
+YA_AUTHOR_FEED_RSS = None
+
 
 # Blogroll
 LINKS = []
