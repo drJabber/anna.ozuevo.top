@@ -69,7 +69,11 @@ class YaWriter(Writer):
         return feed    
 
     def _add_item_to_the_feed(self, feed, item):
-        title = Markup(item.title).striptags()
+        if item.title:
+            title=Markup(item.title).striptags()
+        else:
+            title=Markup(feed.feed['title']).striptags()
+
         link = self.urljoiner(self.site_url, item.url)
 
         description = item.summary
