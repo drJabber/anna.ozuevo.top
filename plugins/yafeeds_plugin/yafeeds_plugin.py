@@ -34,23 +34,12 @@ class YaWriter(Writer):
     def _create_new_feed(self, *args):
         """Helper function (called by the super Writer class) which will initialize
         the YaFeed object."""     
-        if len(args) == 2:
-            # we are on pelican <2.7
-            feed_type, context = args
-        elif len(args) == 3:
-            # we are on Pelican >=2.7
-            feed_type, feed_title, context = args
-        else:
-            # this is not expected, let's provide a useful message
-            raise Exception(
-                'The Writer._create_new_feed signature has changed, check the '
-                'current Pelican source for the updated signature'
-            )     
+        feed_type, feed_title, context = args
 
         self.context = context      
 
         if feed_title:
-            feed_title = context['SITENAME'] + ' - ' + feed_title
+            feed_title = feed_title
         else:
             feed_title = context['SITENAME']
 
