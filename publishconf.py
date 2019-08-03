@@ -12,7 +12,7 @@ from pelicanconf import *
 
 LOAD_CONTENT_CACHE=True
 
-PLUGINS=['assets','amtag_cloud','sitemap','peligram','jinja2content','thumbnailer']
+PLUGINS=['assets','amtag_cloud','sitemap','peligram','jinja2content','thumbnailer','yafeeds_plugin']
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
 SITEURL = 'https://anna.ozuevo.top'
