@@ -148,7 +148,7 @@ MARKDOWN = {
     'output_format': 'html5',
 }
 
-MENUITEMS = [('Заказать','pages/order.html')]
+MENUITEMS = [('Заказать','pages/order.html'),('Корпоративы','pages/corporate.html')]
 
 
 DISQUS_SITENAME='anna-ozuevo'
