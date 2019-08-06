@@ -236,7 +236,7 @@
 
 @media screen and (min-width:769px) {
     .article-body h1.title{
-        margin: 100px 0 10px 0;
+        margin: 30px 0 10px 0;
     }
 }
 @media screen and (max-width:768px) {
