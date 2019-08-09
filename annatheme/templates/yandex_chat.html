@@ -1,0 +1,27 @@
+{% if YANDEX_CHAT %}
+
+
+<script type='text/javascript'>
+    (function () {
+        window['yandexChatWidgetCallback'] = function() {
+            try {
+                window.yandexChatWidget = new Ya.ChatWidget({
+                    guid: '{{ YANDEX_CHAT_GUID }}',
+                    buttonText: 'Чат',
+                    title: 'Пообщаемся?',
+                    theme: 'light',
+                    collapsedDesktop: 'hover',
+                    collapsedTouch: 'always'
+                });
+            } catch(e) { }
+        };
+        var n = document.getElementsByTagName('script')[0],
+            s = document.createElement('script');
+        s.async = true;
+        s.charset = 'UTF-8';
+        s.src = 'https://chat.s3.yandex.net/widget.js';
+        n.parentNode.insertBefore(s, n);
+    })();
+    </script>
+    
+  {% endif %}

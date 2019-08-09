@@ -63,6 +63,8 @@ EXTRA_PATH_METADATA={'extra/CNAME':{'path':'CNAME'},
                     'extra/css/custom.css':{'path': 'css/custom.css'}, 
                     'extra/img/favicon.ico':{'path': 'favicon.ico'}, 
 
+                    'extra/img/menu-cake.gif':{'path': 'img/menu-cake.gif'}, 
+
                     'extra/img/anna-vcard.png':{'path': 'img/anna-vcard.png'}, 
                     'extra/img/banner-005.jpg':{'path': 'img/banner-005.jpg'}, 
                     'extra/img/banner-006.jpg':{'path': 'img/banner-006.jpg'}, 
@@ -159,4 +161,8 @@ GOOGLE_ANALYTICS = "UA-143756815-1"
 GOOGLE_VERIFICATION_META='bx7hlv70iBp8SsKAqjSo4swTvC1iIaUir7rXQPGNCSs'
 
 META_DESCRIPTION='Сайт о домашней кондитерской Анны в г.Орехово-Зуево Московской области'
+
+
+YANDEX_CHAT=True
+YANDEX_CHAT_GUID='161e20ef-ce63-49fe-9f17-6c0726cb24a5'
 
