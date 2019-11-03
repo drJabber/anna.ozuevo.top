@@ -72,6 +72,10 @@
     background-color: #df6262;
 }
 
+.banner.is-primary{
+    background-color: #df6262;
+}
+
 
 .footer {
     background-color: transparent;
@@ -93,6 +97,14 @@
     margin-top:1rem;
     padding:4rem, 2.5rem;
 }
+
+.banner{
+    font-size:1.5rem;
+    color:#fff;
+    font-weight: bold;
+    /* margin-top:10rem; */
+}
+
 
 .menu-label{
     color:#fff;
