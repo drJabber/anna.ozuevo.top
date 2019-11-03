@@ -20,6 +20,10 @@
     {% include 'article_infos.html' %}
 
 
+    {%if DISPLAY_TOP_BANNER %}
+        {% include 'banner.html' %}
+    {% endif %}    
+
     <div class="section">{{ article.content }}</div>
     {% if DISQUS_SITENAME!='' %}
     <div id="disqus_thread"></div>
