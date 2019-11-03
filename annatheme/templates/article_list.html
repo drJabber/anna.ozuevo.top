@@ -1,8 +1,5 @@
 {% if article_list %}
   <div class="is-hidden-print margin-top-xl">
-    {%if DISPLAY_TOP_BANNER %}
-        {% include 'banner.html' %}
-    {% endif %}    
     <h2 class="subtitle">{{ OTHER_ARTICLES_WIDGET_NAME or "Other articles" }}</h2>
     <div class="columns is-1 is-multiline">
       {% for article in article_list %}
