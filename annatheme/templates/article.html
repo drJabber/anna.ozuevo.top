@@ -12,6 +12,12 @@
   {% endwith %}
 {% endblock %}
 {% block content %}
+
+{%if DISPLAY_TOP_BANNER %}
+  {% include 'banner.html' %}
+{% endif %}    
+
+
 <section id="content" class="body">
   <article class="has-light-bg is-border-rounded-n-r has-margin-top-10-desktop">
     <h1 class="title">
@@ -19,10 +25,6 @@
          title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h1>
     {% include 'article_infos.html' %}
 
-
-    {%if DISPLAY_TOP_BANNER %}
-        {% include 'banner.html' %}
-    {% endif %}    
 
     <div class="section">{{ article.content }}</div>
     {% if DISQUS_SITENAME!='' %}
