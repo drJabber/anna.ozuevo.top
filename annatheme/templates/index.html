@@ -1,9 +1,6 @@
 {% extends "base.html" %}
 {% block content_title %}{% endblock %}
 {% block content %}
-    {%if DISPLAY_TOP_BANNER %}
-        {% include 'banner.html' %}
-    {% endif %}    
 
   {% if not article %}
     {% with article_list = articles_page.object_list %}
