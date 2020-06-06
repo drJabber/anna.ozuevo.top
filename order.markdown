@@ -1,4 +1,4 @@
-Title:Заказать
+Title:Заказ
 Date:2019-06-01
 Category:menu
 Slug:order
