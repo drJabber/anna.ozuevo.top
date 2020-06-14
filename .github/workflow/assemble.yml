@@ -1,0 +1,19 @@
+name: Pelican site CI
+
+on:
+  push:
+    branches:
+      - source
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: ./.github/actions/action.yml
+      env:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        PELICAN_CONFIG_FILE: "publishconf.py"
+        INSTAGRAM_PROFILE: "anna.sutyagina"

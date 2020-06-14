@@ -1,0 +1,54 @@
+name: action to build belican static site modified for this project
+description: builds pelican site, but first loads content from instagram
+
+runs:
+    using: 'docker'
+    image: 'Dockerfile'
+  
+inputs:
+    GH_PAGES_BRANCH:
+        description: 'override the default `gh-pages` deployment branch'
+        required: false
+        default: 'gh-pages'
+    
+    PELICAN_CONFIG_FILE:
+        description: 'override the default `pelicanconf.py` config file'
+        required: false
+        default: pelicanconf.py
+
+    PELICAN_OPTS:
+        description: 'override default pelican options'
+        required: false
+        default: -D
+    
+    PELICAN_INPUT_DIR:
+        description: 'markdown sources location for pelican'
+        required: false
+        default: content
+    
+    PELICAN_OUTPUT_DIR:
+        description: 'pelican site output dir'
+        required: false
+        default: output
+    
+    INSTALOADER:
+        description: 'instaloader name'
+        required: false
+        default: instaloader
+
+    INSTALOADER_OPTS:
+        description: 'override instaloader options'
+        required: false
+        default: '--no-compress-json --no-captions --fast-update'
+
+    INSTAGRAM_PROFILE:
+        description: 'instagram profile to download content'
+        required: false
+        default: 'donald.putin'
+
+    INSTAGRAM_DATA_DIR:
+        description: 'directory to download instagram content'
+        required: false
+        default: 'data'
+
+        
