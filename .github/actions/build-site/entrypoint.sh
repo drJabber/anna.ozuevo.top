@@ -4,13 +4,13 @@ set -e
 
 echo "REPO: $GITHUB_REPOSITORY"
 echo "ACTOR: $GITHUB_ACTOR"
-echo "INSTALOADER: $INSTALOADER; $INSTALOADER_OPTS; data dir: $INSTAGRAM_DATA_DIR "
+echo "INSTALOADER: $INPUT_INSTALOADER; $INPUT_INSTALOADER_OPTS; data dir: $INPUT_INSTAGRAM_DATA_DIR "
 
 echo '=================== Install Requirements ==================='
 pip install -r requirements.txt
 echo '=================== Build site ==================='
-${INSTALOADER} ${INSTAGRAM_PROFILE} ${INSTALOADER_OPTS} --dirname-pattern ${INSTAGRAM_DATA_DIR}
-pelican ${PELICAN_INPUT_DIR} -o ${PELICAN_OUTPUT_DIR} -s ${PELICAN_CONFIG_FILE:=publishconf.py} ${PELICAN_OPTS}
+${INPUT_INSTALOADER} ${INPUT_INSTAGRAM_PROFILE} ${INPUT_INSTALOADER_OPTS} --dirname-pattern ${INPUT_INSTAGRAM_DATA_DIR}
+pelican ${INPUT_PELICAN_INPUT_DIR} -o ${INPUT_PELICAN_OUTPUT_DIR} -s ${INPUT_PELICAN_CONFIG_FILE:=publishconf.py} ${INPUT_PELICAN_OPTS}
 echo '=================== Publish to GitHub Pages ==================='
 cd output
 # shellcheck disable=SC2012

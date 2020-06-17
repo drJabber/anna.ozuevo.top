@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: ./.github/actions/build-site
-      env:
+      with:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
         PELICAN_CONFIG_FILE: "publishconf.py"
         INSTAGRAM_PROFILE: "anna.sutyagina"
