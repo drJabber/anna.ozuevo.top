@@ -34,7 +34,7 @@ inputs:
     INSTALOADER:
         description: 'instaloader name'
         required: false
-        default: instaloader
+        default: 'instaloader'
 
     INSTALOADER_OPTS:
         description: 'override instaloader options'

@@ -4,6 +4,7 @@ set -e
 
 echo "REPO: $GITHUB_REPOSITORY"
 echo "ACTOR: $GITHUB_ACTOR"
+echo "INSTALOADER: $INSTALOADER; $INSTALOADER_OPTS; data dir: $INSTAGRAM_DATA_DIR "
 
 echo '=================== Install Requirements ==================='
 pip install -r requirements.txt
