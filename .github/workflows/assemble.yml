@@ -12,7 +12,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - uses: drJabber/anna.ozuevo.top/.github/actions/action.yml@latest
+    - uses: ./.github/actions/build-site
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
         PELICAN_CONFIG_FILE: "publishconf.py"
