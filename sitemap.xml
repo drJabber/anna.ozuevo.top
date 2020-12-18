@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://anna.ozuevo.top/</loc>
-<lastmod>2020-12-17T19:18:11-00:00</lastmod>
+<lastmod>2020-12-18T19:17:18-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://anna.ozuevo.top/archives.html</loc>
-<lastmod>2020-12-17T19:18:11-00:00</lastmod>
+<lastmod>2020-12-18T19:17:18-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://anna.ozuevo.top/tags.html</loc>
-<lastmod>2020-12-17T19:18:11-00:00</lastmod>
+<lastmod>2020-12-18T19:17:18-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://anna.ozuevo.top/categories.html</loc>
-<lastmod>2020-12-17T19:18:11-00:00</lastmod>
+<lastmod>2020-12-18T19:17:18-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -61,7 +61,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://anna.ozuevo.top/pages/twokilo.html</loc>
-<lastmod>2020-12-17T19:18:11-00:00</lastmod>
+<lastmod>2020-12-18T19:17:18-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://anna.ozuevo.top/articles/2020/CI8Qm7GL5S6.html</loc>
+<lastmod>2020-12-18T13:56:11+03:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -3554,27 +3561,69 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://anna.ozuevo.top/category/instagram.html</loc>
-<lastmod>2020-12-16T09:39:31+02:30</lastmod>
+<lastmod>2020-12-18T13:56:11+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://anna.ozuevo.top/tag/otkrytyimedovik.html</loc>
-<lastmod>2020-12-16T09:39:31+02:30</lastmod>
+<loc>https://anna.ozuevo.top/tag/tortssiluetom.html</loc>
+<lastmod>2020-12-18T13:56:11+02:30</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://anna.ozuevo.top/tag/tortrybaku.html</loc>
+<lastmod>2020-12-18T13:56:11+02:30</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://anna.ozuevo.top/tag/tortdliarybaka.html</loc>
+<lastmod>2020-12-18T13:56:11+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://anna.ozuevo.top/tag/cakerussia.html</loc>
-<lastmod>2020-12-16T09:39:31+02:30</lastmod>
+<lastmod>2020-12-18T13:56:11+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://anna.ozuevo.top/tag/tastygram.html</loc>
+<lastmod>2020-12-18T13:56:11+02:30</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://anna.ozuevo.top/tag/tortorekhovozuevo.html</loc>
+<lastmod>2020-12-18T13:56:11+02:30</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://anna.ozuevo.top/tag/tortnazakazorekhovozuevo.html</loc>
+<lastmod>2020-12-18T13:56:11+02:30</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://anna.ozuevo.top/tag/sladostiorekhovozuevo.html</loc>
+<lastmod>2020-12-18T13:56:11+02:30</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://anna.ozuevo.top/tag/otkrytyimedovik.html</loc>
 <lastmod>2020-12-16T09:39:31+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
@@ -3589,27 +3638,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://anna.ozuevo.top/tag/medovyepirozhnye.html</loc>
-<lastmod>2020-12-16T09:39:31+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://anna.ozuevo.top/tag/tortorekhovozuevo.html</loc>
-<lastmod>2020-12-16T09:39:31+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://anna.ozuevo.top/tag/tortnazakazorekhovozuevo.html</loc>
-<lastmod>2020-12-16T09:39:31+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://anna.ozuevo.top/tag/sladostiorekhovozuevo.html</loc>
 <lastmod>2020-12-16T09:39:31+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
@@ -4526,20 +4554,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://anna.ozuevo.top/tag/tortrybaku.html</loc>
-<lastmod>2020-07-27T10:53:55+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://anna.ozuevo.top/tag/tortssiluetom.html</loc>
-<lastmod>2020-07-27T10:53:55+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>https://anna.ozuevo.top/tag/serdechnoenastroenie.html</loc>
 <lastmod>2020-07-22T09:38:09+02:30</lastmod>
 <changefreq>daily</changefreq>
@@ -4773,13 +4787,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://anna.ozuevo.top/tag/tortynazakazorekhovozuevo.html</loc>
 <lastmod>2020-05-28T09:21:35+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://anna.ozuevo.top/tag/tortdliarybaka.html</loc>
-<lastmod>2020-05-26T09:25:54+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -6179,7 +6186,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://anna.ozuevo.top/author/anna.html</loc>
-<lastmod>2020-12-16T09:39:31+02:30</lastmod>
+<lastmod>2020-12-18T13:56:11+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
