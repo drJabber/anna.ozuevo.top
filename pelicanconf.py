@@ -143,11 +143,14 @@ AMTAG_CLOUD_MAX_ITEMS=50 #number of different tags that can appear in tag cloud
 
 MARKDOWN = {
     # 'extensions':['markdown.extensions.codehilite','markdown.extensions.extra','markdown.extensions.meta','md_video'],
+    'extensions': ['mdx_include'],
+
     'extension_configs': {
         'codehilite': {'css_class': 'highlight'},
         'meta': {},
         'extra': {},
         'md_video':{},
+        'mdx_include': {'base_path' : PATH + '/include'}
     },
     'output_format': 'html5',
 }
