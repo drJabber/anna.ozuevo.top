@@ -21,8 +21,9 @@ Description: Начинки тортиков. Под капотом...
                 <div class="card-content is-paddingless">
                     <a href="#">
                         <div class="columns is-mobile is-gapless">
-                            <div class="column is-one-quarter-desktop is-one-quarter-tablet is-one-third-mobile">
-                                    <img src="/extra/img/cherrychok.jpg" class="img-responsive float-left mr-8 padding-s is-border-rounded-n-r" alt="">
+                            <div class="column is-fullwidth">
+                                    <img src="/extra/img/fill/cherrychok02.jpg" class="img-responsive float-left mr-8 padding-s is-border-rounded-n-r" alt="">
+                                    <div class="heading subtitle">Начинка 4</div>
                             </div>
                         </div>
                     </a>
@@ -34,11 +35,9 @@ Description: Начинки тортиков. Под капотом...
                 <div class="card-content is-paddingless">
                     <a href="#">
                         <div class="columns is-mobile is-gapless">
-                            <div class="column is-fullwidth-desktop is-fullwidth-tablet is-fullwidth-mobile">
-                                <img src="/extra/img/cherrychok.jpg" class="img-responsive float-left mr-8 padding-s is-border-rounded-n-r" alt="">
-                            </div>
                             <div class="column is-fullwidth">
-                                <h3 class="title is-5">Начинка 2</h3>
+                                <img src="/extra/img/fill/cherrychok03.jpg" class="img-responsive float-left mr-8 padding-s is-border-rounded-n-r" alt="">
+                                <div class="heading subtitle">Начинка 4</div>
                             </div>
                         </div>
                     </a>
@@ -50,10 +49,8 @@ Description: Начинки тортиков. Под капотом...
                 <div class="card-content is-paddingless">
                     <a href="#">
                         <div class="columns is-mobile is-gapless">
-                            <div class="column is-fullwidth-desktop is-fullwidth-tablet is-fullwidth-mobile">
-                                <img src="/extra/img/cherrychok.jpg" class="img-responsive float-left mr-2 padding-s is-border-rounded-n-r" alt="">
-                            </div>
                             <div class="column is-fullwidth">
+                                <img src="/extra/img/fill/thumb/cherrychok02-t.jpg" class="img-responsive float-left mr-2 padding-s is-border-rounded-n-r" alt="">
                                 <h3 class="title is-5">Начинка 3</h3>
                             </div>
                         </div>
@@ -67,7 +64,7 @@ Description: Начинки тортиков. Под капотом...
                     <a href="#">
                         <div class="columns is-mobile is-gapless">
                             <div class="column is-one-quarter-desktop is-one-quarter-tablet is-one-third-mobile">
-                                <img src="/img/cherrychok.jpg" class="img-responsive float-left mr-4 padding-s is-border-rounded-n-r" alt="">
+                                <img src="/extra/img/cherrychok.jpg" class="img-responsive float-left mr-4 padding-s is-border-rounded-n-r" alt="">
                             </div>
                             <div class="column is-fullwidth">
                                 <h3 class="title is-5"></h3>

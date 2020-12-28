@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <link rel="shortcut icon" href="#" />
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-COMPATIBLE" content="IE=edge" >
+		<title>Страница логина</title>
+		
+		
+		<link rel="stylesheet" href="/public/.resources/lib/bootstrap/css/bootstrap~2020-09-29-09-57-26-000~cache.css" media="all" />
+		<link rel="stylesheet" href="/public/.resources/lib/bootstrap-datepicker/css/bootstrap-datepicker.min~2020-09-29-09-57-26-000~cache.css" media="all" />
+		<link rel="stylesheet" href="/public/.resources/lib/select2/css/select2.min~2020-09-29-09-57-26-000~cache.css" media="all" />
+		<link rel="stylesheet" href="/public/.resources/lib/font-awesome/css/font-awesome.min~2020-09-29-09-57-26-000~cache.css" media="all" />
+		<link rel="stylesheet" href="/public/.resources/lib/kladr/jquery.kladr.min~2020-09-29-09-57-26-000~cache.css" media="" />
+		<link rel="stylesheet" href="/public/.resources/lib/fonts/littera-plain~2020-09-29-09-57-26-000~cache.css" media="all" name="littera-plain-font"/>
+		<link rel="stylesheet" href="/public/.resources/npfpa-components-module/css/style~2020-12-08-08-35-38-000~cache.css" media="all" />
+		<link rel="stylesheet" href="/public/.resources/lib/video-fullscreen~2017-07-27-08-40-30-570~cache.css" media="all" />
+ 		<script  type="text/javascript">
+			var contextPath = "/public";
+			var kladrApiUrl = "https://online.npfb.ru/kladr/api.php";
+		</script>
+		<!--[if lt IE 9]>
+  		<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<![endif]-->
+		<script src="/public/.resources/lib/jquery-1.12.1~2020-09-29-09-57-26-000~cache.js"></script>
+		<script src="/public/.resources/lib/bootstrap/js/bootstrap~2020-09-29-09-57-26-000~cache.js"></script>
+		<script src="/public/.resources/lib/bootstrap-datepicker/js/bootstrap-datepicker.min~2020-09-29-09-57-26-000~cache.js"></script>
+		<script src="/public/.resources/lib/bootstrap-datepicker/locales/bootstrap-datepicker.ru.min~2020-09-29-09-57-26-000~cache.js"></script>
+		<script src="/public/.resources/lib/jquery.mask.min~2020-09-29-09-57-26-000~cache.js"></script>
+		<script src="/public/.resources/lib/select2/js/select2.min~2020-09-29-09-57-26-000~cache.js"></script>
+		<script src="/public/.resources/lib/jquery.tmpl~2020-09-29-09-57-26-000~cache.js"></script>
+		<script src="/public/.resources/lib/kladr/jquery.kladr.min~2020-09-29-09-57-26-000~cache.js"></script>
+		<script src="/public/.resources/npfpa-components-module/js/npfpa-functions~2020-12-08-08-35-38-000~cache.js"></script>
+		<script src="/public/.resources/lib/video-fullscreen~2017-07-27-08-40-16-339~cache.js"></script>
+ 
+<!-- cms:page content="website:/npfpa/login" dialog="blossom-template-dialog:ru.cinimex.npfpa.components.PageTemplateComponent" -->
+<!-- /cms:page -->
+	</head>
+	<body>
+		<div class="npf-page-container">
+			<div class="npf-page-header">
+<div class="npf-component npf-siteheader-component">
+	<div class="frame-wrapper">
+		<iframe id="npf-header-frame" src="/public/npfpa/rest/site/header" height="100%" width="100%" scrolling="no"></iframe>
+	</div>
+
+	<script  type="text/javascript">
+		$(window).load(function(){
+	    	var frame = $('#npf-header-frame');
+	    	frame.height(frame.contents().find("html").height() + 'px');
+	    });
+	</script>
+
+</div>			</div>
+			<div class="npf-page-navigation">
+			</div> 
+			<div class="npf-page-main">
+<div class="npf-component npf-loginform-component">
+    <div class="npf-login-form-container">
+        <div class="left">
+                            <div class="npf-login-form">
+                    <form>
+                        <div class="control-group">
+                            <div class="controls" style="text-align: center;">
+                                <span class="esia-logo"></span>
+                                <br>
+                                <p class="npf-form-header">Вход в личный кабинет</p>
+                                <p style="color: #ADADAD;">Доступ в личный кабинет с помощью учетной записи портала госуслуг</p>
+                                <a class="esia-link btn not-active">
+                                    Войти
+                                </a>
+                                <div style="text-align: left;">
+                                    <input type="checkbox" id="esia_sign" class="esia_sign" style=" vertical-align: top;">
+                                    <label style="color: #ADADAD; font-size: 12px; display: inline-block; vertical-align: top; margin-left: 5px; cursor: text;">
+                                        Я согласен с <span data-toggle="modal" data-target="#esia-agreement" style="text-decoration: underline; cursor: pointer;">условиями</span> входа в личный кабинет
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <script type="text/javascript">
+                        $(document).ready(function() {
+
+                            if($('#esia_sign').is(":checked")) {
+                                $('.esia-link').removeClass("not-active");
+                            }
+
+                            var getParams = function (url) {
+                                var params = {};
+                                var parser = document.createElement('a');
+                                parser.href = url;
+                                var query = parser.search.substring(1);
+                                var vars = query.split('&');
+                                for (var i = 0; i < vars.length; i++) {
+                                    var pair = vars[i].split('=');
+                                    params[pair[0]] = decodeURIComponent(pair[1]);
+                                }
+                                return params;
+                            };
+                            var query_string = getParams(window.location.href);
+                            if (query_string["reg"] == "ONPROGRESS"){
+                                $.ajax({type: "POST", url: contextPath + '/npfpa/rest/logs/esia/redirect'})
+                                        .done( function(data) {
+                                            window.location.href = "https://online.npfb.ru/esiabridge/blitz/bridge/entrance?redirect_url=https://online.npfb.ru/public/npfpa/login.html&state=1a9fa87b-50d9-4690-90e5-cc69f06dabda&mode=online";
+                                        });
+                            }
+
+                            $('.esia_sign').change(function() {
+                                if($(this).is(":checked")) {
+                                    $('.esia-link').removeClass("not-active");
+                                } else {
+                                    $('.esia-link').addClass("not-active");
+                                }
+                            });
+
+                            $("a.esia-link").click(function() {
+                                if($(this).hasClass("not-active")) {
+                                    $("#esia-sign-info .esia-sign-info-message").text("Уважаемый клиент! Для входа в личный кабинет просим Вас ознакомиться и принять условия входа");
+                                    $('#esia-sign-info').modal('show');
+                                } else {
+                                    $.ajax({type: "POST", url: contextPath + '/npfpa/rest/logs/esia/redirect'})
+                                        .done( function(data) {
+                                            window.location.href = "https://online.npfb.ru/esiabridge/blitz/bridge/entrance?redirect_url=https://online.npfb.ru/public/npfpa/login.html&state=1a9fa87b-50d9-4690-90e5-cc69f06dabda&mode=online";
+                                        });
+                                }
+                            });
+
+                            $("#esia-agreement .esia-agreement-cancel").click(function() {
+                                $('#esia-agreement').modal('hide');
+                                $("#esia-sign-info .esia-sign-info-message").text("Уважаемый клиент! Доступ в личный кабинет может быть предоставлен в случае Вашего согласия с условиями входа");
+                                $('#esia-sign-info').modal('show');
+                            });
+
+                            $("#esia-agreement .esia-agreement-ok").click(function() {
+                                $('#esia-agreement').modal('hide');
+                                $.ajax({type: "POST", url: contextPath + '/npfpa/rest/logs/esia/redirect'})
+                                    .done( function(data) {
+                                        window.location.href = "https://online.npfb.ru/esiabridge/blitz/bridge/entrance?redirect_url=https://online.npfb.ru/public/npfpa/login.html&state=1a9fa87b-50d9-4690-90e5-cc69f06dabda&mode=online";
+                                    });
+                            });
+
+                        });
+                    </script>
+                </div>
+
+            <div class="npf-login-form">
+                <form action method="post" enctype="application/x-www-form-urlencoded">
+
+                    <div class="control-group">
+                        <div class="controls">
+                            <p class="npf-form-header">
+                            	Вход в личный кабинет
+                                <i tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-placement="top" id="instructionAndQuestions"
+                                   class="fa fa-question-circle-o" aria-hidden="true" style="margin-left: 10px; color:#D22630; font-size : 20px; cursor: pointer;"></i>
+                            <div id="popover-content" class="hide">
+                                <table class="table table-bordered" style="margin-bottom: 0px;">
+                                    <tbody>
+                                    <tr style="font-size: 10px; color: #FFFFFF">
+                                        <td bgcolor="#D22630" class="questionsAndAnswers" style="cursor: pointer; font-size: 13px; max-width: 200px;">Вопросы и ответы по сервису «Личный кабинет»</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            </p>
+                        </div>
+                        <style media="screen" type="text/css">
+                            .popover{
+                                max-width: 100%; /* Max Width of the popover (depending on the container!) */
+                            }
+                            .table {
+                                border: 5px solid #FFFFFF;
+                            }
+                            .table-bordered > thead > tr > th,
+                            .table-bordered > tbody > tr > th,
+                            .table-bordered > tfoot > tr > th,
+                            .table-bordered > thead > tr > td,
+                            .table-bordered > tbody > tr > td,
+                            .table-bordered > tfoot > tr > td {
+                                border: 5px solid #FFFFFF;
+                            }
+                            div.ext-box { display: table; height:100%; width:100%;}
+                            div.int-box { display: table-cell; vertical-align: middle;text-align: center; }
+
+                        </style>
+                        <script type="text/javascript">
+                            $("#instructionAndQuestions").popover({
+                                html: true,
+                                content: function () {
+                                    return $('#popover-content').html();
+                                }
+                            });
+                            $(document).on("click", ".questionsAndAnswers", function() {
+                                window.open("/public/npfpa/questionsAndAnswers","_self")
+                            });
+                        </script>
+                    </div>
+
+                    <div class="control-group">
+                        <div class="controls">
+                            <input type="text" class="npf-login" id="login" name="mgnlUserId"
+                                   autocomplete="off"
+                                   placeholder="___-___-___ __">
+                        </div>
+                    </div>
+                    <div class="hide">
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <div class="control-group">
+                        <div class="controls">
+
+                            <input type="text" id="passwordActual"
+                                   name="mgnlUserPSWD"
+                                   placeholder="Пароль"
+                                   autocomplete="off">
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <div class="controls">
+                            <button type="submit" class="btn">Войти</button>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <hr style="color: #008521;"/>
+                    </div>
+
+                    <div class="control-group" style="margin-top: -20px !important;">
+    					<p style="color: #ADADAD; font-size: 11px;">Пароль нельзя вводить с помощью функций «Копировать» и «Вставить».</p>
+                    </div>
+
+                    <div class="control-group">
+                        <div class="controls">
+                            <a href="/public/npfpa/login/recovery-password"
+                               style="text-decoration: underline;">Забыли
+                                пароль?</a>
+                        </div>
+                    </div>
+
+                    <input type="hidden" name="mgnlReturnTo" value="/public/npfpa/home">
+                </form>
+
+
+                <script type="text/javascript">
+
+                    $(document).ready(function() {
+                    	$('.npf-login').mask('000-000-000 00');
+                        $('#passwordActual').bind('copy paste', function (e) {
+                            e.preventDefault();
+                        });
+                    });
+
+                    $(function(){
+                        var passElem = $("input#passwordActual");
+                        passElem.focus(function() {
+                            passElem.prop("type", "password");
+                        });
+                    });
+                </script>
+            </div>
+
+        </div>
+        <div class="right">
+            <div class="login-form-content">
+<div class="npf-component npf-richtext-component">
+	<p><span style="font-family: litteraplainbook; font-size: 16px;">Личный кабинет &ndash; это онлайн сервис, позволяющий в любой момент уточнить состояние именного пенсионного счета или воспользоваться дополнительными услугами. <a href="/public/dam/jcr:636e156e-0b4f-4708-b0f9-fba5200c8af8/LK_user_manual.pdf">Инструкция</a></span></p>
+
+<p><span style="font-size:16px;"><span style="font-family:litteraplainbook;"><strong>КАК ПОЛУЧИТЬ ДОСТУП К ЛИЧНОМУ КАБИНЕТУ?</strong></span></span></p>
+
+<p><span style="font-size:16px;"><span style="font-family:litteraplainbook;"><strong>Через учетную запись на портале Госуслуг&nbsp;</strong><a href="/public/dam/jcr:f73f3443-f19c-4dd2-acad-3339146d9e78/Instrukcia%20gosuslugi.pdf">Инструкция</a></span></span></p>
+
+<p><span style="font-size:16px;"><span style="font-family:litteraplainbook;">Авторизация в личном кабинете с помощью портала Госуслуги не требует посещения филиала и заполнения Анкеты-Заявления. Вам требуется:</span></span></p>
+
+<ul>
+	<li><span style="font-size:16px;"><span style="font-family:litteraplainbook;">заключенный и вступивший в силу договор негосударственного пенсионного обеспечения;</span></span></li>
+	<li><span style="font-size:16px;"><span style="font-family:litteraplainbook;">подтвержденная учетная запись Пользователя на портале Госуслуги (www.gosuslugi.ru).</span></span></li>
+</ul>
+
+<p style="margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: LitteraPlainBook; font-size: 18px; background-color: rgb(255, 255, 255); line-height: 23px !important;"><span style="font-size:16px;"><span style="font-family:litteraplainbook;"><strong>С помощью логина и пароля</strong> <a href="/public/dam/jcr:472a219d-524d-49e0-8a35-0f8258aeb0f8/Instrykciya%20vxoda%20v%20LK.pdf" style="font-family: litteraplainbook; font-size: 16px;">Инструкция</a></span></span></p>
+
+<p style="margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: LitteraPlainBook; font-size: 18px; background-color: rgb(255, 255, 255); line-height: 23px !important;"><span style="font-size:16px;"><span style="font-family:litteraplainbook;">Заполните и подпишите Анкету-Заявление на подключение к сервису одним из способов:</span></span></p>
+
+<ul>
+	<li style="line-height: 20px; text-align: justify;"><span style="font-size:16px;"><span style="font-family:litteraplainbook;"><span style="line-height: 107%;">в отделе кадров по месту работы (если вы являетесь работником/пенсионером ОАО &laquo;РЖД&raquo;, его дочерних и зависимых обществ);</span></span></span></li>
+	<li style="line-height: 20px; text-align: justify;"><span style="font-size:16px;"><span style="font-family:litteraplainbook;"><span style="line-height: 107%;">в филиале фонда (необходимо иметь документ, удостоверяющий личность, и СНИЛС);<span style="line-height: 107%;">&nbsp; </span></span></span></span></li>
+	<li style="line-height: 20px; text-align: justify;"><span style="font-size:16px;"><span style="font-family:litteraplainbook;"><span style="line-height: 107%;"><span style="line-height: 107%;">дистанционно. Для этого <a href="/public/dam/jcr:5ec4a9df-8007-4637-88a0-eecee9622cb1/3_%20Anketa%20Zayavlenie%20na%20podklyhenie%20k%20servisam%20Fonda.doc">скачайте</a>&nbsp;и заполните Анкету-Заявление, подпишите и направьте в&nbsp;<a href="http://npfb.ru/o-fonde/adresa-filialov/">филиал фонда</a>, предварительно нотариально заверив вашу подпись. Для самостоятельного заполнения Анкеты-Заявления воспользуйтесь <a href="/public/dam/jcr:05d875a9-cc11-4650-89a8-e70114f2db9f/3_Obrazec%20Anketa%20Zayavlenie%20na%20podklyhenie%20k%20servisam%20Fonda.pdf">шаблоном</a>.</span></span></span></span></li>
+</ul>
+
+<p style="margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: LitteraPlainBook; font-size: 18px; background-color: rgb(255, 255, 255); text-align: justify; line-height: 23px !important;"><span style="font-size:16px;"><span style="font-family:litteraplainbook;">Пароль для доступа в личный кабинет будет направлен на указанный вами в Анкете-Заявлении адрес электронной почты. Логином служит СНИЛС &ndash; номер карты обязательного пенсионного страхования. При визите в фонд логин и пароль можно получить в день обращения.</span></span></p>
+
+</div><div class="npf-component npf-richtext-component">
+</div>            </div>
+        </div>
+    </div>
+
+
+	<div id="esia-agreement" class="modal fade" role="dialog" style="width: 700px; border: 3px solid #D22630; display: none;">
+		<div class="modal-dialog" role="document">
+		    <div class="modal-content">
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h2 style="height: 7px;"></h2>
+				</div>
+
+				<div class="modal-body">
+						<p style="text-align: justify;"><span style="font-size:16px;"><span style="font-family:litteraplainbook;"><strong>Пожалуйста, ознакомьтесь с условиями входа в личный кабинет с&nbsp;<br />
+помощью учетной записи на портале Госуслуги.&nbsp;</strong></span></span></p>
+
+<p style="text-align: justify;"><span style="font-size:16px;"><span style="font-family:litteraplainbook;">В соответствии с п.4 ст.9 Федерального закона от 27.07.2006 N152-ФЗ &laquo;О персональных данных&raquo; настоящим даю свое согласие акционерному обществу &laquo;Негосударственный пенсионный фонд &laquo;БЛАГОСОСТОЯНИЕ&raquo; (далее &ndash; Фонд), адрес места нахождения: 127006, Россия, Москва, ул. Малая Дмитровка, д. 10, имеющему лицензию на осуществление деятельности по пенсионному обеспечению от 22.03.2005 № 234/2, на получение, обработку (сбор, запись, систематизация, накопление, хранение, уточнение (обновление, изменение), использование, блокирование, удаление, уничтожение) с использованием и без использования средств автоматизации моих персональных данных, а именно серии и номера документа, удостоверяющего личность от Единой системы идентификации и аутентификации (ЕСИА) в целях&nbsp; получения доступа к моей личной закрытой странице на сайте Фонда в информационно-телекоммуникационной сети Интернет по адресу https://online.npfb.ru путем проведения успешной аутентификации пользователя и сравнения данных документа, удостоверяющего личность, предоставленным ЕСИА и паспортных данных, имеющихся в учетной системе Фонда.</span></span></p>
+
+<p style="text-align: justify;"><span style="font-size:16px;"><span style="font-family:litteraplainbook;">Настоящее согласие я даю на срок 75 лет.</span></span></p>
+
+<p style="text-align: justify;"><span style="font-size:16px;"><span style="font-family:litteraplainbook;">Настоящее согласие может быть отозвано мною до истечения срока, указанного в настоящем согласии, путем подачи/направления в Фонд письменного отзыва настоящего согласия.</span></span></p>
+
+				</div>
+
+				<div class="modal-footer">
+                    <button class="btn btn-default npf-button esia-agreement-ok" style="margin-bottom: 0px !important;">
+                        Я согласен с условиями
+                    </button>
+					<button class="btn btn-default npf-button esia-agreement-cancel" style="margin-bottom: 0px !important;">
+                        Я не согласен с условиями
+                    </button>
+				</div>
+
+			</div>
+	    </div>
+	</div>
+
+	<div id="esia-sign-info" class="modal fade" role="dialog" style="border: 3px solid #D22630; display: none;">
+
+		<div class="modal-dialog" role="document">
+
+		    <div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h2 style="height: 7px;"></h2>
+				</div>
+				<div class="modal-body">
+					<p class="esia-sign-info-message"></p>
+				</div>
+				<div class="modal-footer"><p> </p></div>
+			</div>
+
+	    </div>
+
+	</div>
+
+
+
+
+</div><div class="npf-component npf-richtext-component">
+	<div>
+<p>&nbsp;</p>
+</div>
+
+<div style="margin-left:25px; width:390px; display: inline-block; vertical-align : top;"><iframe class="npfb_video" frameborder="0" height="315" id="player-0" src="https://www.youtube.com/embed/QiFvsfIXRvc" style="width: 385px; height: 216px;" width=""></iframe></div>
+
+<div style="width:777px; margin-left:35px; display: inline-block">
+<p><span style="font-size:16px;"><span style="font-family:litteraplainbook;"><b>Посмотрите, как легко пользоваться сервисом:</b></span></span></p>
+
+<ul>
+	<li style="text-align: justify;"><span style="font-size:16px;"><span style="font-family:litteraplainbook;"><span style="color: rgb(0, 98, 55);"><span style="color: rgb(0, 0, 0);">получать информацию о состоянии пенсионного счета;</span></span></span></span></li>
+	<li style="text-align: justify;"><span style="font-size:16px;"><span style="font-family:litteraplainbook;">узнавать, как увеличить размер будущей негосударственной пенсии;</span></span></li>
+	<li><span style="font-size:16px;"><span style="font-family:litteraplainbook;">без комиссии перечислять дополнительные личные пенсионные взносы используя сервис &laquo;Взнос онлайн&raquo;;</span></span></li>
+	<li><span style="font-size:16px;"><span style="font-family:litteraplainbook;">дистанционно оформлять заказы на получение необходимых справок и пакета документов;</span></span></li>
+	<li><span style="font-size:16px;"><span style="font-family:litteraplainbook;">оперативно находить ответы на часто задаваемые вопросы в адрес Фонда;</span></span></li>
+	<li><span style="font-size:16px;"><span style="font-family:litteraplainbook;">скачивать формы и образцы необходимых заявлений;</span></span></li>
+	<li><span style="font-size:16px;"><span style="font-family:litteraplainbook;">узнавать подробную информацию о налогах на доходы физических лиц и многое другое.</span></span></li>
+</ul>
+</div>
+
+</div><div class="npf-component npf-richtext-component">
+	<div style="margin-left:25px;">
+<p style="margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: LitteraPlainBook; font-size: 18px; background-color: rgb(255, 255, 255); text-align: justify; line-height: 23px !important;"><span style="font-size:16px;"><span style="font-family:litteraplainbook;"><span style="line-height: 23px !important;"><span style="line-height: 23px !important;"><strong style="line-height: 23px !important;">Д</strong></span></span><span style="line-height: 23px !important;"><span style="line-height: 23px !important;"><strong style="line-height: 23px !important;">оступ к сервису &quot;Личный кабинет&quot; прекращается:</strong></span></span></span></span></p>
+
+<ul>
+	<li style="line-height: 20px; text-align: justify;"><span style="font-size:16px;"><span style="font-family:litteraplainbook;"><span style="line-height: 23px !important;"><span style="line-height: 23px !important;">при условии полного исполнения обязательств сторон по договору НПО;</span></span></span></span></li>
+	<li style="line-height: 20px; text-align: justify;"><span style="font-size:16px;"><span style="font-family:litteraplainbook;"><span style="line-height: 23px !important;"><span style="line-height: 23px !important;">при расторжении договора НПО.</span></span></span></span></li>
+</ul>
+
+<p style="margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: LitteraPlainBook; font-size: 18px; background-color: rgb(255, 255, 255); text-align: justify; line-height: 23px !important;"><span style="font-size:16px;"><span style="font-family:litteraplainbook;">Получить подробную консультацию о сервисе &laquo;Личный кабинет&raquo; можно по телефону бесплатной справочной службы 8 800 775 15 20 или *1520 (для абонентов МТС, Билайн, МегаФон, Tele2, МОТИВ)&nbsp;или&nbsp;<span style="line-height: 23px !important;"><span style="line-height: 23px !important;">воспользоваться формой&nbsp;<a href="http://npfb.ru/" style="color: rgb(210, 38, 48); text-decoration-line: none; cursor: pointer; line-height: 23px !important;"><font color="#d22630"><span style="cursor: pointer;">&quot;</span></font><font color="#d22630" style="cursor: pointer; line-height: 23px !important;">Связаться с Фондом&quot;</font></a>.</span></span></span></span></p>
+</div>
+
+</div>			</div>
+			<div class="npf-page-footer">
+			</div>
+		</div>
+	</body>
+</html>
