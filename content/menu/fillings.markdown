@@ -50,7 +50,7 @@ Description: Начинки тортиков. Под капотом...
                     <a href="#">
                         <div class="columns is-mobile is-gapless">
                             <div class="column is-fullwidth">
-                                <img src="/extra/img/fill/thumb/cherrychok02-t.jpg" class="img-responsive float-left mr-2 padding-s is-border-rounded-n-r" alt="">
+                                <img src="/extra/img/fill/thumb/cherrychok02-t  .jpg" class="img-responsive float-left mr-2 padding-s is-border-rounded-n-r" alt="">
                                 <h3 class="title is-5">Начинка 3</h3>
                             </div>
                         </div>
