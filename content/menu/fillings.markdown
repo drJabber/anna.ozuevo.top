@@ -23,19 +23,17 @@ Description: Начинки тортиков. Под капотом...
                         <div class="columns is-mobile is-gapless">
                             <div class="column is-fullwidth">
                                 <div>
-                                    <p>
+                                    <img src="/extra/img/fill/hazelnutcaramelle02.jpg" class="img-responsive float-left mr-8 padding-s is-border-rounded-n-r" alt="">
+                                    <p class="title is-7">
                                         <strong>ШОКОЛАДНО-КАРАМЕЛЬНЫЙ ТОРТ</strong>
-                                        <ul>
-                                            <li>Насыщенный шоколадный бисквит брауни</li>
-                                            <li>Кофейная пропитка</li>
-                                            <li>Карамельный крем-чиз, жареные грецкие или миндальные орехи</li>
-                                            <li>В детском варианте - хрустящие шоколадные шарики кранч</li>
-                                        </ul>
                                     </p>
+                                    <ul class="subtitle is-6">
+                                        <li>Насыщенный шоколадный бисквит брауни</li>
+                                        <li>Кофейная пропитка</li>
+                                        <li>Карамельный крем-чиз, жареные грецкие или миндальные орехи</li>
+                                        <li>В детском варианте - хрустящие шоколадные шарики кранч</li>
+                                    </ul>
                                 </div>
-                            </div>
-                            <div class="column is-fullwidth">
-                                    <img src="/extra/img/fill/hazelnutcaramelle02.jpg" class="img-responsive float-left mr-8 padding-s is-border-rounded-n-r" alt="">
                             </div>
                         </div>
                     </a>
@@ -49,19 +47,17 @@ Description: Начинки тортиков. Под капотом...
                         <div class="columns is-mobile is-gapless">
                             <div class="column is-fullwidth">
                                 <div>
-                                    <p>
+                                    <img src="/extra/img/fill/hazelnutcaramelle02.jpg" class="img-responsive float-left mr-8 padding-s is-border-rounded-n-r" alt="">
+                                    <p class="title is-7">
                                         <strong>ВАНИЛЬНО-ШОКОЛАДНЫЙ ТОРТ</strong>
-                                        <ul>
-                                            <li>Два вида бисквита - ванильный и шоколадный</li>
-                                            <li>Пропитка на основе сгущеного молока</li>
-                                            <li>Крем-чиз на сливках</li>
-                                            <li>Прослойка из мусса на молочном шоколаде</li>
-                                        </ul>
-                                    </p>
+                                    </p>    
+                                    <ul class="subtitle is-6">
+                                        <li>Два вида бисквита - ванильный и шоколадный</li>
+                                        <li>Пропитка на основе сгущеного молока</li>
+                                        <li>Крем-чиз на сливках</li>
+                                        <li>Прослойка из мусса на молочном шоколаде</li>
+                                    </ul>
                                 </div>
-                            </div>
-                            <div class="column is-fullwidth">
-                                    <img src="/extra/img/fill/hazelnutcaramelle02.jpg" class="img-responsive float-left mr-8 padding-s is-border-rounded-n-r" alt="">
                             </div>
                         </div>
                     </a>
@@ -75,17 +71,15 @@ Description: Начинки тортиков. Под капотом...
                         <div class="columns is-mobile is-gapless">
                             <div class="column is-fullwidth">
                                 <div>
-                                    <p>
-                                        <strong>КЛАССИЧЕСКИЙ/КАРАМЕЛЬНЫЙ МЕДОВИК</strong>
-                                        <ul>
-                                            <li>Тонкие медовые коржи со сливочным/сливочно-карамельным кремом</li>
-                                            <li>Возможно добавление грецких орехов и кусочков чернослива, проваренных в апельсиновом соке</li>
-                                        </ul>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="column is-fullwidth">
                                     <img src="/extra/img/fill/yoghurt02.jpg" class="img-responsive float-left mr-8 padding-s is-border-rounded-n-r" alt="">
+                                    <p class="title is-7">
+                                        <strong>КЛАССИЧЕСКИЙ/КАРАМЕЛЬНЫЙ МЕДОВИК</strong>
+                                    </p>    
+                                    <ul class="subtitle is-6">
+                                        <li>Тонкие медовые коржи со сливочным/сливочно-карамельным кремом</li>
+                                        <li>Возможно добавление грецких орехов и кусочков чернослива, проваренных в апельсиновом соке</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -99,18 +93,16 @@ Description: Начинки тортиков. Под капотом...
                         <div class="columns is-mobile is-gapless">
                             <div class="column is-fullwidth">
                                 <div>
-                                    <p>
-                                        <strong>МОЛОЧНАЯ ДЕВОЧКА</strong>
-                                        <ul>
-                                            <li>Тонкие бисквитные коржи на сгущеном молоке</li>
-                                            <li>Карамельный крем на фундучном пралине</li>
-                                            <li>Или сливочный крем-чиз с клубничной или малиновой прослойкой</li>
-                                        </ul>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="column is-fullwidth">
                                     <img src="/extra/img/fill/vanillabanana02.jpg" class="img-responsive float-left mr-8 padding-s is-border-rounded-n-r" alt="">
+                                    <p class="title is-7">
+                                        <strong>МОЛОЧНАЯ ДЕВОЧКА</strong>
+                                    </p>    
+                                    <ul class="subtitle is-6">
+                                        <li>Тонкие бисквитные коржи на сгущеном молоке</li>
+                                        <li>Карамельный крем на фундучном пралине</li>
+                                        <li>Или сливочный крем-чиз с клубничной или малиновой прослойкой</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </a>
