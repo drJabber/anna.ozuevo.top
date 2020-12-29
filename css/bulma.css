@@ -4084,6 +4084,10 @@ a.tag:hover {
   font-size: 0.75rem;
 }
 
+.title.is-8 {
+  font-size: 0.75rem;
+}
+
 .subtitle {
   color: #4a4a4a;
   font-size: 1.25rem;
@@ -4126,6 +4130,10 @@ a.tag:hover {
 
 .subtitle.is-7 {
   font-size: 0.75rem;
+}
+
+.subtitle.is-8 {
+  font-size: 0.5rem;
 }
 
 .heading {
