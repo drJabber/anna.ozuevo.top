@@ -283,6 +283,7 @@
 .article-body ul{
     /* margin-top: 0.75em; */
     list-style-type: disc;
+    list-style-position: inside;
     font-size: 1.25rem;
 }
 
@@ -317,6 +318,10 @@
     font-size:1.125rem;
     text-indent:20px;
     text-align:justify;
+}
+
+.column ul{
+    list-style-position: inside;
 }
 
 .padding-xs{
