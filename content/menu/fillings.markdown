@@ -22,8 +22,20 @@ Description: Начинки тортиков. Под капотом...
                     <a href="#">
                         <div class="columns is-mobile is-gapless">
                             <div class="column is-fullwidth">
-                                    <img src="/extra/img/fill/cherrychok02.jpg" class="img-responsive float-left mr-8 padding-s is-border-rounded-n-r" alt="">
-                                    <div class="heading subtitle">Начинка 4</div>
+                                <div>
+                                    <p>
+                                        <strong>ШОКОЛАДНО-КАРАМЕЛЬНЫЙ ТОРТ</strong>
+                                        <ul>
+                                            <li>Насыщенный шоколадный бисквит брауни</li>
+                                            <li>Кофейная пропитка</li>
+                                            <li>Карамельный крем-чиз, жареные грецкие или миндальные орехи</li>
+                                            <li>В детском варианте - хрустящие шоколадные шарики кранч</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="column is-fullwidth">
+                                    <img src="/extra/img/fill/hazelnutcaramelle02.jpg" class="img-responsive float-left mr-8 padding-s is-border-rounded-n-r" alt="">
                             </div>
                         </div>
                     </a>
@@ -36,8 +48,20 @@ Description: Начинки тортиков. Под капотом...
                     <a href="#">
                         <div class="columns is-mobile is-gapless">
                             <div class="column is-fullwidth">
-                                <img src="/extra/img/fill/cherrychok03.jpg" class="img-responsive float-left mr-8 padding-s is-border-rounded-n-r" alt="">
-                                <div class="heading subtitle">Начинка 4</div>
+                                <div>
+                                    <p>
+                                        <strong>ВАНИЛЬНО-ШОКОЛАДНЫЙ ТОРТ</strong>
+                                        <ul>
+                                            <li>Два вида бисквита - ванильный и шоколадный</li>
+                                            <li>Пропитка на основе сгущеного молока</li>
+                                            <li>Крем-чиз на сливках</li>
+                                            <li>Прослойка из мусса на молочном шоколаде</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="column is-fullwidth">
+                                    <img src="/extra/img/fill/hazelnutcaramelle02.jpg" class="img-responsive float-left mr-8 padding-s is-border-rounded-n-r" alt="">
                             </div>
                         </div>
                     </a>
@@ -50,8 +74,18 @@ Description: Начинки тортиков. Под капотом...
                     <a href="#">
                         <div class="columns is-mobile is-gapless">
                             <div class="column is-fullwidth">
-                                <img src="/extra/img/fill/thumb/cherrychok02-t  .jpg" class="img-responsive float-left mr-2 padding-s is-border-rounded-n-r" alt="">
-                                <h3 class="title is-5">Начинка 3</h3>
+                                <div>
+                                    <p>
+                                        <strong>КЛАССИЧЕСКИЙ/КАРАМЕЛЬНЫЙ МЕДОВИК</strong>
+                                        <ul>
+                                            <li>Тонкие медовые коржи со сливочным/сливочно-карамельным кремом</li>
+                                            <li>Возможно добавление грецких орехов и кусочков чернослива, проваренных в апельсиновом соке</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="column is-fullwidth">
+                                    <img src="/extra/img/fill/yoghurt02.jpg" class="img-responsive float-left mr-8 padding-s is-border-rounded-n-r" alt="">
                             </div>
                         </div>
                     </a>
@@ -63,14 +97,20 @@ Description: Начинки тортиков. Под капотом...
                 <div class="card-content is-paddingless">
                     <a href="#">
                         <div class="columns is-mobile is-gapless">
-                            <div class="column is-one-quarter-desktop is-one-quarter-tablet is-one-third-mobile">
-                                <img src="/extra/img/cherrychok.jpg" class="img-responsive float-left mr-4 padding-s is-border-rounded-n-r" alt="">
+                            <div class="column is-fullwidth">
+                                <div>
+                                    <p>
+                                        <strong>МОЛОЧНАЯ ДЕВОЧКА</strong>
+                                        <ul>
+                                            <li>Тонкие бисквитные коржи на сгущеном молоке</li>
+                                            <li>Карамельный крем на фундучном пралине</li>
+                                            <li>Или сливочный крем-чиз с клубничной или малиновой прослойкой</li>
+                                        </ul>
+                                    </p>
+                                </div>
                             </div>
                             <div class="column is-fullwidth">
-                                <h3 class="title is-5"></h3>
-            
-                                <div class="heading subtitle">Начинка 4</div>
-                                <div><p>Вот такая начинка 4<br /></p></div>
+                                    <img src="/extra/img/fill/vanillabanana02.jpg" class="img-responsive float-left mr-8 padding-s is-border-rounded-n-r" alt="">
                             </div>
                         </div>
                     </a>
