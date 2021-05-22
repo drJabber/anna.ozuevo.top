@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://anna.ozuevo.top/</loc>
-<lastmod>2021-05-20T18:43:19-00:00</lastmod>
+<lastmod>2021-05-22T16:09:58-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://anna.ozuevo.top/archives.html</loc>
-<lastmod>2021-05-20T18:43:19-00:00</lastmod>
+<lastmod>2021-05-22T16:09:58-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://anna.ozuevo.top/tags.html</loc>
-<lastmod>2021-05-20T18:43:19-00:00</lastmod>
+<lastmod>2021-05-22T16:09:58-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://anna.ozuevo.top/categories.html</loc>
-<lastmod>2021-05-20T18:43:19-00:00</lastmod>
+<lastmod>2021-05-22T16:09:58-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -68,7 +68,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://anna.ozuevo.top/pages/twokilo.html</loc>
-<lastmod>2021-05-20T18:43:19-00:00</lastmod>
+<lastmod>2021-05-22T16:09:58-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://anna.ozuevo.top/articles/2021/CPIzk7fLhdv.html</loc>
+<lastmod>2021-05-21T14:01:00+03:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -3729,42 +3736,70 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://anna.ozuevo.top/category/instagram.html</loc>
-<lastmod>2021-05-19T14:35:52+02:30</lastmod>
+<lastmod>2021-05-21T14:01:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://anna.ozuevo.top/tag/cakerussia.html</loc>
-<lastmod>2021-05-19T14:35:52+02:30</lastmod>
+<loc>https://anna.ozuevo.top/tag/torttiktok.html</loc>
+<lastmod>2021-05-21T14:01:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://anna.ozuevo.top/tag/tastygram.html</loc>
-<lastmod>2021-05-19T14:35:52+02:30</lastmod>
+<loc>https://anna.ozuevo.top/tag/tortdliadevochki.html</loc>
+<lastmod>2021-05-21T14:01:00+02:30</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://anna.ozuevo.top/tag/detskiitortik.html</loc>
+<lastmod>2021-05-21T14:01:00+02:30</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://anna.ozuevo.top/tag/serenevyitort.html</loc>
+<lastmod>2021-05-21T14:01:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://anna.ozuevo.top/tag/tortorekhovozuevo.html</loc>
-<lastmod>2021-05-19T14:35:52+02:30</lastmod>
+<lastmod>2021-05-21T14:01:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://anna.ozuevo.top/tag/tortnazakazorekhovozuevo.html</loc>
-<lastmod>2021-05-19T14:35:52+02:30</lastmod>
+<lastmod>2021-05-21T14:01:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://anna.ozuevo.top/tag/sladostiorekhovozuevo.html</loc>
-<lastmod>2021-05-19T14:35:52+02:30</lastmod>
+<lastmod>2021-05-21T14:01:00+02:30</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://anna.ozuevo.top/tag/cakerussia.html</loc>
+<lastmod>2021-05-21T14:01:00+02:30</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://anna.ozuevo.top/tag/tastygram.html</loc>
+<lastmod>2021-05-21T14:01:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -4079,13 +4114,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://anna.ozuevo.top/tag/tortna13let.html</loc>
-<lastmod>2021-04-18T14:07:30+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://anna.ozuevo.top/tag/tortdliadevochki.html</loc>
 <lastmod>2021-04-18T14:07:30+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
@@ -6662,7 +6690,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://anna.ozuevo.top/author/anna.html</loc>
-<lastmod>2021-05-19T14:35:52+02:30</lastmod>
+<lastmod>2021-05-21T14:01:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
