@@ -1,8 +1,0 @@
-Title:
-Date:2019-01-02 09:40:04
-Slug:BsIKIoRgbrO
-Category:Инстаграм
-Tags:новыйгод2019
-image:2019-01-02_09-40-04_UTC_tntl.jpg
-[новыйгод2019]({tag}новыйгод2019)
-![instagram]({attach}images/2019-01-02_09-40-04_UTC.jpg)

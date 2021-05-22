@@ -1,9 +1,0 @@
-Title:
-Date:2018-09-16 18:37:14
-Slug:BnzBwdPhgnj
-Category:Инстаграм
-Tags:моясемья
-image:2018-09-16_18-37-14_UTC_1_tntl.jpg
-[моясемья]({tag}моясемья)
-![instagram]({attach}images/2018-09-16_18-37-14_UTC_1.jpg)
-![instagram]({attach}images/2018-09-16_18-37-14_UTC_2.jpg)

@@ -1,8 +1,0 @@
-Title:
-Date:2018-06-17 09:24:26
-Slug:BkHuJ-3Ak7z
-Category:Инстаграм
-Tags:торты, торт
-image:2018-06-17_09-24-26_UTC_tntl.jpg
-Подарок сыну на днюху [торты]({tag}торты) [торт]({tag}торт)
-![instagram]({attach}images/2018-06-17_09-24-26_UTC.jpg)

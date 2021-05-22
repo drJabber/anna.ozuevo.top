@@ -1,8 +1,0 @@
-Title:
-Date:2018-10-05 13:56:03
-Slug:Bojcri-AkMM
-Category:Инстаграм
-Tags:
-image:2018-10-05_13-56-03_UTC_tntl.jpg
-
-![instagram]({attach}images/2018-10-05_13-56-03_UTC.jpg)

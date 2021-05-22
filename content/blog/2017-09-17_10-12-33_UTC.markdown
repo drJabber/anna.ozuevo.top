@@ -1,8 +1,0 @@
-Title:
-Date:2017-09-17 10:12:33
-Slug:BZI2pgtHFWs
-Category:Инстаграм
-Tags:моясемья
-image:2017-09-17_10-12-33_UTC_tntl.jpg
-[моясемья]({tag}моясемья)👨‍👩‍👧‍👦
-![instagram]({attach}images/2017-09-17_10-12-33_UTC.jpg)

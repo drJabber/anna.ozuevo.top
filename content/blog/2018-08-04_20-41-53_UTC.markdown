@@ -1,8 +1,0 @@
-Title:
-Date:2018-08-04 20:41:53
-Slug:BmEh1tQBXdd
-Category:Инстаграм
-Tags:летоэтомаленькаяжизнь
-image:2018-08-04_20-41-53_UTC_tntl.jpg
-[летоэтомаленькаяжизнь]({tag}летоэтомаленькаяжизнь)
-![instagram]({attach}images/2018-08-04_20-41-53_UTC.jpg)

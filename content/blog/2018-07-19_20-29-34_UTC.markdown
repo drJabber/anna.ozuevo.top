@@ -1,9 +1,0 @@
-Title:
-Date:2018-07-19 20:29:34
-Slug:BlbTtgghw_n
-Category:Инстаграм
-Tags:тришоколада, трайфлы, капкейки
-image:2018-07-19_20-29-34_UTC_2_tntl.jpg
-[тришоколада]({tag}тришоколада) [трайфлы]({tag}трайфлы) [капкейки]({tag}капкейки)
-![instagram]({attach}images/2018-07-19_20-29-34_UTC_2.jpg)
-![instagram]({attach}images/2018-07-19_20-29-34_UTC_1.jpg)

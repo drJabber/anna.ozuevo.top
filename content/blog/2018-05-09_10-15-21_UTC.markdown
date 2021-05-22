@@ -1,9 +1,0 @@
-Title:
-Date:2018-05-09 10:15:21
-Slug:BijY-wFgJzb
-Category:Инстаграм
-Tags:гораМонсеррат, туманноеутро
-image:2018-05-09_10-15-21_UTC_1_tntl.jpg
-[гораМонсеррат]({tag}гораМонсеррат)[туманноеутро]({tag}туманноеутро)
-![instagram]({attach}images/2018-05-09_10-15-21_UTC_1.jpg)
-![instagram]({attach}images/2018-05-09_10-15-21_UTC_2.jpg)

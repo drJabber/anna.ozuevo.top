@@ -1,8 +1,0 @@
-Title:
-Date:2018-07-14 21:09:59
-Slug:BlOgXJ7BHkJ
-Category:Инстаграм
-Tags:капкейки, торт, торты
-image:2018-07-14_21-09-59_UTC_tntl.jpg
-[капкейки]({tag}капкейки) [торт]({tag}торт) [торты]({tag}торты)
-![instagram]({attach}images/2018-07-14_21-09-59_UTC.jpg)

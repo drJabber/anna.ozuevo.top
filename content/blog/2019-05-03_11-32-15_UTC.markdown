@@ -1,8 +1,0 @@
-Title:
-Date:2019-05-03 11:32:15
-Slug:Bw_7KIwA2BH
-Category:Инстаграм
-Tags:моясемья
-image:2019-05-03_11-32-15_UTC_tntl.jpg
-[моясемья]({tag}моясемья)
-![instagram]({attach}images/2019-05-03_11-32-15_UTC.jpg)
