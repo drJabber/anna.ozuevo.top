@@ -1,0 +1,8 @@
+
+User-agent: Yandex
+Disallow: /content/
+
+User-agent: *
+Disallow: /content/
+Sitemap: https://anna.ozuevo.top/sitemap.xml
+Host: anna.ozuevo.top
