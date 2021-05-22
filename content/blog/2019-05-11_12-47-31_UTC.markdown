@@ -1,0 +1,12 @@
+Title:
+Date:2019-05-11 12:47:31
+Slug:BxUqERcgc88
+Category:Инстаграм
+Tags:crete, туризм, путешествие
+image:2019-05-11_12-47-31_UTC_tntl.jpg
+Западный Крит. Тополийское ущелье, пещера Святой Софии, монастырь Хрисоскалитисса и пляж Элафониси.
+[crete]({tag}crete) [туризм]({tag}туризм) [путешествие]({tag}путешествие)
+![instagram]({attach}images/2019-05-11_12-47-31_UTC.jpg)
+
+[video]
+[download.mp4]({attach}images/2019-05-11_12-47-31_UTC.mp4)

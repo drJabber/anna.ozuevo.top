@@ -1,0 +1,422 @@
+.has-hero-bg { background: url('/img/hero-bg.jpg') center center; background-size:cover; }
+/* .has-container-bg { background: url('/img/main-bg-001.jpg') repeat ; background-size:auto; } */
+.has-nav-bg::before { 
+    content: "";
+    background: url('/img/banner-011.png') top left;
+    background-repeat: repeat-x;
+    opacity: 0.8;
+    top: 0.8rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+
+
+.has-container-bg::after {
+    content: "";
+    background: url('/img/main-bg-001.jpg');
+    opacity: 0.15;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+
+.has-light-bg{
+    background-color: #FFDDDD;
+}  
+
+.navbar {
+    background-color: transparent;
+}  
+
+.has-menu-border{
+    border: 1px solid;
+}
+
+.is-border-rounded-n-r{
+    border-radius: 1rem;
+}
+
+.is-border-rounded-m-r{
+    border-radius: 0.75rem;
+}
+
+.is-border-rounded-s-r{
+    border-radius: 0.5rem;
+}
+
+.is-border-rounded-xs-r{
+    border-radius: 0.25rem;
+}
+
+
+.navbar-brand{
+    flex-shrink: 1;
+    display:contents;
+}
+
+.is-brand-inactive{
+    background-color: #df6262;
+}
+
+.menu.is-primary{
+    background-color: #df6262;
+}
+
+.tag-cloud.is-primary{
+    background-color: #df6262;
+}
+
+.banner.is-primary{
+    background-color: #df6262;
+}
+
+
+.footer {
+    background-color: transparent;
+    padding: 2rem 1.5rem 2rem;
+}  
+
+.footer.is-primary, footer.is-primary a{
+    background-color: #df6262;
+    color:#fff;
+}
+
+
+.menu{
+    font-size:1.25rem;
+    /* margin-top:10rem; */
+}
+
+.tag-cloud{
+    margin-top:1rem;
+    padding:4rem, 2.5rem;
+}
+
+.banner{
+    font-size:1.5rem;
+    color:#fff;
+    font-weight: bold;
+    /* margin-top:10rem; */
+}
+
+
+.menu-label{
+    color:#fff;
+    font-size:1.25rem;
+    font-weight: bold;
+    padding: 0.2em 1em;
+}
+
+.menu-list a.is-active{
+    background-color: #3273dcC0
+}
+
+.menu-list a:hover{
+    background-color: #4a4a4aA0
+}
+
+
+.menu-list a{
+    color:#fff;
+    padding: 0.2em 1.5em
+}
+
+.menu-label:not(:last-child) {
+    margin-bottom: 0.5em;
+}
+
+.has-footer-bg::after { 
+    content: "";
+    background: url('/img/banner-006.jpg') repeat;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+
+.has-transparent-bg {
+    background-color: #ff1f4b20;
+}  
+
+.pagination-next.is-danger{
+    background-color: #b83d3d;
+}
+
+.pagination-next.is-danger[disabled]{
+    background-color: #bf9a9a;
+}
+
+.pagination-previous.is-danger{
+    background-color: #b83d3d;
+}
+
+.pagination-previous.is-danger[disabled]{
+    background-color: #bf9a9a;
+}
+
+#chartdiv {
+ width: 100%;
+ height: 600px;
+}
+
+.md-video {
+    width: 80%;
+}
+
+.post-info{
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+}
+
+.author span.tag{
+    background-color: #df6262;
+    color:#fff;
+}
+.author span.tag a{
+    color:#fff;
+}
+
+/* override bulma container size for large screens */
+@media screen and (max-width:768px) {
+    .has-margin-top-5-mobile{
+        margin-top:5rem;
+    }
+    .has-margin-top-1-mobile{
+        margin-top:1rem;
+    }
+}
+
+@media screen and (min-width:769px) {
+    .has-margin-top-10-tablet{
+        margin-top:10rem;
+    }
+    .has-margin-top-5-tablet{
+        margin-top:5rem;
+    }
+    .has-margin-top-1-tablet{
+        margin-top:1rem;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .has-margin-top-10-touch{
+        margin-top:10rem;
+    }
+    .has-margin-top-5-touch{
+        margin-top:5rem;
+    }
+    .has-margin-top-1-touch{
+        margin-top:1rem;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .has-margin-top-10-desktop{
+        margin-top:10rem;
+    }
+    .has-margin-top-5-desktop{
+        margin-top:5rem;
+    }
+    .has-margin-top-1-desktop{
+        margin-top:1rem;
+    }
+}
+
+
+@media screen and (max-width:1800px) {
+    .container.is-fullhd {
+        max-width:1800px
+    }
+}
+
+@media screen and (min-width:1801px) {
+    .container {
+        max-width:1800px
+    }
+}
+
+
+
+@media screen and (min-width:769px) {
+    .article-body h1.title{
+        margin: 30px 0 10px 0;
+    }
+}
+@media screen and (max-width:768px) {
+    .article-body h1.title{
+        margin: 10px 0 10px 0;
+    }
+}
+    .article-body h1.title{
+    padding: 10px 15px 10px 15px;
+    text-align: center;
+    /* font-size: 2.5rem; */
+    line-height: 40px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'GothamPro';
+    position: relative;
+    /* z-index: 3; */
+}
+
+.article-body h1 span {
+    border-bottom: 2px solid #ff1f4b40;
+    padding-bottom: 2px;
+}
+
+.article-body p{
+    color: #202020;
+    font-family: 'Circe';
+    text-indent:20px;
+    text-align:justify;
+}
+
+.article-body ul{
+    /* margin-top: 0.75em; */
+    list-style-type: disc;
+    list-style-position: inside;
+    font-size: 1.25rem;
+}
+
+.article-body ul li{
+    color: #202020;
+    font-family: 'GothamPro';
+    text-indent:20px;
+    text-align:justify;
+
+    padding: 10px 0;
+
+    left: 1.5em;
+    padding-left: 1em;
+}
+
+.article-body ul li p{
+    color: #202020;
+    font-family: 'GothamPro';
+    text-indent:20px;
+    text-align:justify;
+
+    padding: 10px 0;
+
+    left: 1.5em;
+    padding-left: 1em;
+}
+
+.article-body p strong {
+    color: #202020;
+    font-family: 'GothamPro';
+    font-weight: bold;
+    font-size:1.125rem;
+    text-indent:20px;
+    text-align:justify;
+}
+
+.column ul{
+    list-style-position: inside;
+}
+
+.padding-xs{
+    padding: 0.25rem;
+
+}
+
+.padding-s{
+    padding: 0.5rem;
+
+}
+
+.margin-top-xl{
+    margin-top:7rem;
+}
+
+h2.subtitle{
+    font-size:1.25rem;
+    font-weight:700;
+    letter-spacing:0.125rem;
+    text-transform: uppercase;
+}
+
+    /** Gotham **/
+    @font-face {
+        font-family: 'GothamPro';
+        src: url('/fonts/GothamPro-Light.eot?') format('eot'), 
+             url('/fonts/GothamPro-Light.otf')  format('opentype'),
+             url('/fonts/GothamPro-Light.woff') format('woff'), 
+             url('/fonts/GothamPro-Light.ttf')  format('truetype'),
+             url('/fonts/GothamPro-Light.svg#GothamPro-Light') format('svg');
+             font-weight: 300;
+             font-style: normal;
+             font-display: swap;
+         }
+    
+    @font-face {
+        font-family: 'GothamPro';
+        src: url('/fonts/GothamPro-Medium.eot?') format('eot'), 
+             url('/fonts/GothamPro-Medium.otf')  format('opentype'),
+             url('/fonts/GothamPro-Medium.woff') format('woff'), 
+             url('/fonts/GothamPro-Medium.ttf')  format('truetype'),
+             url('/fonts/GothamPro-Medium.svg#GothamPro-Medium') format('svg');
+             font-weight: 500;
+             font-style: normal;
+             font-display: swap;
+         }
+    
+    @font-face {
+    font-family: 'GothamPro';
+    src: url('/fonts/GothamPro-Bold.eot?') format('eot'), 
+            url('/fonts/GothamPro-Bold.otf')  format('opentype'),
+            url('/fonts/GothamPro-Bold.woff') format('woff'), 
+            url('/fonts/GothamPro-Bold.ttf')  format('truetype'),
+            url('/fonts/GothamPro-Bold.svg#GothamPro-Bold') format('svg');
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+    
+    @font-face {
+    font-family: 'GothamPro';
+    src: url('/fonts/GothamPro.eot?') format('eot'), 
+            url('/fonts/GothamPro.otf')  format('opentype'),
+            url('/fonts/GothamPro.woff') format('woff'), 
+            url('/fonts/GothamPro.ttf')  format('truetype'),
+            url('/fonts/GothamPro.svg#GothamPro') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+    /** Circe **/
+    @font-face {
+        font-family: 'Circe';
+        src: url('/fonts/Circe-Light.eot');
+        src: url('/fonts/Circe-Light.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Circe-Light.woff') format('woff'),
+        url('/fonts/Circe-Light.ttf') format('truetype'),
+        url('/fonts/Circe-Light.svg#webfont') format('svg');
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Circe';
+        src: url('/fonts/Circe-Regular.eot');
+        src: url('/fonts/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Circe-Regular.woff') format('woff'),
+        url('/fonts/Circe-Regular.ttf') format('truetype'),
+        url('/fonts/Circe-Regular.svg#webfont') format('svg');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+    
