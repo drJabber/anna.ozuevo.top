@@ -7,6 +7,6 @@ Pygments==2.9.0
 jsonpath-rw==1.4.0
 jsonpath-rw-ext==1.2.2
 webassets==2.0
-pillow==8.2.0
+pillow==10.0.1
 mdx-include==1.4.1
 git+git://github.com/drJabber/md-video.git@additions#egg=md-video
